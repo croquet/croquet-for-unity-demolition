@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3017531285199334322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3017531285199334323}
+  - component: {fileID: 1247901758}
+  - component: {fileID: -3699857948877878891}
+  m_Layer: 0
+  m_Name: TNT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3017531285199334323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017531285199334322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3344720737073323251}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247901758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017531285199334322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694e3f949ee0f4b11b221127aca18d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuseEffect: {fileID: 8470853394812297572, guid: 6f79586bd28374ac580a5ed8888c5d09,
+    type: 3}
+  explodeEffect: {fileID: 8470853394812297572, guid: 7326c6d4b7dd04887af27019237bf856,
+    type: 3}
+  visualGeometry: {fileID: 2675425591772251721}
+--- !u!114 &-3699857948877878891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017531285199334322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00665c699d03643ef983515ea7e232c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  croquetActorId: 
+  croquetGameHandle: 
+  recolorable: 0
+  clickable: 0
+  clickLayers: []
+--- !u!1001 &3017531285462465304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3017531285199334323}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+        type: 3}
+      propertyPath: m_Name
+      value: TNTBarrel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2be26d0d2ba6849a0b58e9cf38e90c85, type: 3}
+--- !u!1 &2675425591772251721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 3017531285462465304}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3344720737073323251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2be26d0d2ba6849a0b58e9cf38e90c85,
+    type: 3}
+  m_PrefabInstance: {fileID: 3017531285462465304}
+  m_PrefabAsset: {fileID: 0}
