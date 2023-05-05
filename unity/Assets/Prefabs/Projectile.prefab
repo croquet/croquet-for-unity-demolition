@@ -42,12 +42,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6525333519143686095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00665c699d03643ef983515ea7e232c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f2069f058ca04f3c97f5b182fcd9b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   croquetActorId: 
   croquetGameHandle: 
-  recolorable: 1
+  recolorable: 0
   clickable: 0
   clickLayers: []
 --- !u!1001 &6525333519069891031

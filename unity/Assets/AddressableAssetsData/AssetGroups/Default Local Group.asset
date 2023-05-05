@@ -37,11 +37,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - demolition
-  - m_GUID: 84381820436159d4190a3461d38b171c
-    m_Address: GroundPlane
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - demolition
   - m_GUID: d6b5720d36d30406fa312e065ee0a7c1
     m_Address: WoodCube
     m_ReadOnly: 0
