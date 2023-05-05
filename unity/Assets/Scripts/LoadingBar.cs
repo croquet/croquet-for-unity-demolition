@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class LoadingBar : LoadingProgressDisplay
+public class LoadingBar : MonoBehaviour
 {
     public bool activateTestAnimation;
     public bool smoothing;
@@ -39,12 +39,12 @@ public class LoadingBar : LoadingProgressDisplay
         }
     }
 
-    public override void Show()
+    public void Show()
     {
         this.gameObject.SetActive(true);
     }
 
-    public override void Hide()
+    public void Hide()
     {
         this.gameObject.SetActive(false);
     }
@@ -64,7 +64,7 @@ public class LoadingBar : LoadingProgressDisplay
     /// This is the proper public interface to update the progress.
     /// </summary>
     /// <param name="progress">a normalized value representing current loading bar progress</param>
-    public override void SetProgress(float progress)
+    public void SetProgress(float progress)
     {
         if (smoothing)
         {
@@ -84,7 +84,7 @@ public class LoadingBar : LoadingProgressDisplay
     /// </summary>
     /// <param name="progress">a normalized value representing current loading bar progress</param>
     /// <param name="msg">A message to display on the loading bar</param>
-    public override void SetProgress(float progress, string msg) {
+    public void SetProgress(float progress, string msg) {
         SetMessage(msg);
         SetProgress(progress);
     }
@@ -94,7 +94,7 @@ public class LoadingBar : LoadingProgressDisplay
     /// This is the proper public interface to update the message.
     /// </summary>
     /// <param name="msg">the string to display</param>
-    public override void SetMessage(string msg)
+    public void SetMessage(string msg)
     {
         msgTxt.text = msg;
     }
