@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DemolitionCustomBridge : MonoBehaviour
+public class DemolitionCustomBridge : CroquetBridgeExtension
 {
     private CroquetBridge bridge;
     private void Awake()
@@ -21,7 +21,7 @@ public class DemolitionCustomBridge : MonoBehaviour
         }
     }
 
-    public bool ProcessCommand(string command, string[] args)
+    public override bool ProcessCommand(string command, string[] args)
     {
         bool handled = true;
         if (command == "fuseLit") BarrelFuseLit(args);

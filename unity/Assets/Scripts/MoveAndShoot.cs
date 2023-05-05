@@ -155,7 +155,7 @@ public class MoveAndShoot : MonoBehaviour
         Vector3 gunOffset = new Vector3(0, -1, -49);
         Vector3 gun = camRot * gunOffset;
         string positionStr = string.Join<float>(",", new[] { gun.x, gun.y, gun.z });
-        CroquetBridge.SendCroquet("event", "shoot", positionStr);
+        CroquetBridge.SendCroquetSync("event", "shoot", positionStr);
     }
 
 }
