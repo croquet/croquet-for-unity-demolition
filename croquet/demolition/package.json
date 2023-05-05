@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Croquet Demolition demo",
   "private": true,
+  "scripts": {
+    "build-three": "npx webpack --config webpack.config-three.js --mode development"
+  },
   "author": "Croquet Corporation",
   "license": "Apache-2.0",
   "devDependencies": {
@@ -15,7 +18,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@croquet/worldcore-kernel": "^2.0.0-alpha.0",
+    "@croquet/worldcore": "^2.0.0-alpha.0",
     "@croquet/worldcore-rapier": "^2.0.0-alpha.0"
   }
 }

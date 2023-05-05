@@ -213,8 +213,9 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
             colliderPosition: [0, -2, 0]
         });
 
-        this.listen("shoot", this.shoot);
-        this.listen("new", this.reset);
+        this.subscribe("ui", "shoot", this.shoot);
+        this.subscribe("ui", "new", this.reset);
+
         this.buildAll();
         this.versionBump = 0;
     }

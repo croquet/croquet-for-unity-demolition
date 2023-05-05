@@ -1,8 +1,6 @@
 // Demolition Demo
 
-/* global MyModelRoot */
-
-const { ViewRoot, Pawn, mix, InputManager, PM_ThreeVisible, ThreeRenderManager, PM_Spatial, THREE, PM_Smoothed, toRad, m4_rotation, m4_multiply, WidgetManager2, Widget2, ButtonWidget2, TAU, m4_translation, v3_transform, ThreeInstanceManager, PM_ThreeInstanced, ViewService, App, StartWorldcore } = globalThis.Worldcore;
+import { ViewRoot, Pawn, mix, InputManager, PM_ThreeVisible, ThreeRenderManager, PM_Spatial, THREE, PM_Smoothed, toRad, m4_rotation, m4_multiply, WidgetManager2, Widget2, ButtonWidget2, TAU, m4_translation, v3_transform, ThreeInstanceManager, PM_ThreeInstanced, ViewService } from "@croquet/worldcore";
 
 function setGeometryColor(geometry, color) {
     const count = geometry.getAttribute("position").count;
@@ -163,7 +161,7 @@ class GodView extends ViewService {
 
 const gun = [0,-1,50];
 
-class MyViewRoot extends ViewRoot {
+export class MyViewRoot extends ViewRoot {
 
     static viewServices() {
         return [InputManager, ThreeRenderManager, ThreeInstanceManager, WidgetManager2, GodView];
@@ -253,7 +251,7 @@ class MyViewRoot extends ViewRoot {
         this.future(0).doShoot();
     }
 
-    doShoot() {
+    doShoot() { console.log("doShoot");
         // hack for dealing with whole-screen detection of the clicks
         // meant for buttons
         if (this.killNextShot) {
@@ -268,7 +266,7 @@ class MyViewRoot extends ViewRoot {
         const yawMatrix = m4_rotation([0,1,0], yaw);
         const both = m4_multiply(pitchMatrix, yawMatrix);
         const shoot = v3_transform(gun, both);
-        this.publish("ui", "shoot", {shoot, index});
+        this.publish("ui", "shoot", { gun: shoot, index });
     }
 
     buildInstances() {
@@ -330,21 +328,4 @@ class MyViewRoot extends ViewRoot {
 }
 
 Pawn.register('GamePawn');
-
-App.makeWidgetDock();
-App.sync = false;
-const loadProgressElem = document.getElementById('loadProgress');
-StartWorldcore({
-    appId: 'io.croquet.game.demolition',
-    apiKey: '14rqAOsLG15ez7vcuJ9h3zIeoe29d5xf8c5rta9mz',
-    name: App.autoSession(),
-    password: 'password',
-    debug: ['session', 'messages', 'hashing'],
-    model: MyModelRoot,
-    view: MyViewRoot,
-    tps: 1000 / 27, // aiming to catch a 50ms Rapier update every other tick
-    progressReporter: ratio => {
-        loadProgressElem.textContent = `${Math.round(ratio * 100)}%`;
-    }
-}).then(() => loadProgressElem.remove());
 

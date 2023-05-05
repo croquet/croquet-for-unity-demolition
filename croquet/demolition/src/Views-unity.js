@@ -1,6 +1,6 @@
 // Croquet Demolition Demo
 
-import { Pawn, mix, toRad, m4_rotation, m4_multiply, m4_translation, m4_getTranslation, m4_getRotation, GetViewService } from "@croquet/worldcore-kernel";
+import { Pawn, mix, toRad, m4_rotation, m4_multiply, m4_translation, m4_getTranslation, m4_getRotation, GetViewService } from "@croquet/worldcore";
 import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered } from "../common/unity-bridge";
 
 //------------------------------------------------------------------------------------------
@@ -12,20 +12,20 @@ class BasePawn extends Pawn {
         super(...args);
 
         this.pawnManager = GetViewService('GameEnginePawnManager');
-        this.userManager = this.modelService("UserManager");
+        this.userManager = this.modelService('UserManager');
 
         this.subscribe('input', 'pointerUp', this.doPointerUp);
         this.subscribe('input', 'shoot', this.doShoot);
     }
 
     doPointerUp({ button }) {
-        if (button === 1) this.say('new'); // reset the scene
+        if (button === 1) this.publish('ui', 'new'); // reset the scene
     }
 
     doShoot({ gun }) {
         // globalThis.timedLog("shoot");
         const index = this.userManager.user(this.viewId).index;
-        this.say('shoot', { gun, index });
+        this.publish('ui', 'shoot', { gun, index });
     }
 
 }
@@ -96,7 +96,7 @@ export class MyViewRoot extends GameViewRoot {
 
     placeCamera() {
         const pitchMatrix = m4_rotation([1, 0, 0], toRad(20));
-        const yawMatrix = m4_rotation([0, 1, 0], toRad(30));
+        const yawMatrix = m4_rotation([0, 1, 0], toRad(-30));
 
         let cameraMatrix = m4_translation([0, 0, -50]);
         cameraMatrix = m4_multiply(cameraMatrix, pitchMatrix);
