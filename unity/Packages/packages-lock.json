@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.croquet.multiplayer": {
-      "version": "file:/Users/aranlunzer/workdisk/briefcase/gitrepos/croquet-for-unity-package",
+      "version": "file:../../../croquet-for-unity-package/",
       "depth": 0,
       "source": "local",
       "dependencies": {}
