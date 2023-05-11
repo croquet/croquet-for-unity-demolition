@@ -6,48 +6,25 @@ using UnityEngine.InputSystem.Controls;
 
 public class MoveAndShoot : MonoBehaviour
 {
-    private int lastTouchCount = 0;
-    private Actions inputActions;
-    private InputAction look;
-    private InputAction fire;
-    Vector2 touchDeltaSinceLastDown = new Vector2();
-
     private GameObject mainCamera;
     private float yaw = 0;
     private float pitch = 0;
 
+    private bool dragging = false;
+    private bool dragMoved = false;
+    Vector2 touchDeltaSinceLastDown = new Vector2();
+
+    private int lastTouchCount = 0;
+
     void Awake()
     {
         mainCamera = GameObject.FindWithTag("MainCamera");
-        
-        // input registration
-        inputActions = new Actions();
-        inputActions.Enable();
-        look = inputActions.Player.Look;
-        look.Enable();
-
-        fire = inputActions.Player.Fire;
-        fire.Enable();
-
-        if (Input.touchSupported)
-        {
-            //inputActions.Player.Fire.started += DragStart;
-            inputActions.Player.Fire.canceled += Fire;
-            inputActions.Player.Look.started += DragStart;
-            inputActions.Player.Look.canceled += DragEnd;
-            inputActions.Player.Look.performed += DragMove;
-        }
-        else
-        {
-            inputActions.Player.Fire.started += DragStart;
-            inputActions.Player.Fire.canceled += DragEnd;
-            inputActions.Player.Look.performed += DragMove;
-        }
     }
 
     void Update()
     {
         LookForSecondaryClick();
+        ProcessPointer();
     }
 
     void LookForSecondaryClick()
@@ -65,73 +42,74 @@ public class MoveAndShoot : MonoBehaviour
         if (secondaryClick) CroquetBridge.SendCroquet("event", "pointerUp", "1");
     }
 
-    bool dragging = false;
-    bool dragMoved = false;
-    void DragStart(InputAction.CallbackContext callbackContext)
+    void ProcessPointer()
     {
-        // Debug.Log("Drag start");
-
-        touchDeltaSinceLastDown = Vector2.zero;
-        dragging = true;
-        dragMoved = false; // if still false on up, this was just a tap
-
-        // read yaw and pitch from camera's current position
-        Quaternion q = mainCamera.transform.localRotation;
-        yaw = Mathf.Rad2Deg * Mathf.Atan2(2 * q.y * q.w - 2 * q.x * q.z, 1 - 2 * q.y * q.y - 2 * q.z * q.z);
-        pitch = Mathf.Rad2Deg * Mathf.Atan2(2*q.x*q.w - 2*q.y*q.z, 1 - 2*q.x*q.x - 2*q.z*q.z);
-        // Debug.Log($"starting yaw: {yaw} pitch: {pitch}");
-    }
-
-    void DragMove(InputAction.CallbackContext callbackContext)
-    {
-        if (!dragging) return;
-
-        //Debug.Log("Drag move");
-
-        Vector2 delta = callbackContext.ReadValue<Vector2>();
-        MoveCamera(delta);
-
-        touchDeltaSinceLastDown += delta;
-        if (touchDeltaSinceLastDown.magnitude > 2)
+        if (Input.GetMouseButtonDown(0))
         {
-            //Debug.Log(touchDeltaSinceLastDown.magnitude.ToString());
-            dragMoved = true;
-        }
-    }
+            // Debug.Log("Down");
+            touchDeltaSinceLastDown = Vector2.zero;
+            dragging = true;
+            dragMoved = false; // if still false on up, this was just a tap
 
-    void DragEnd(InputAction.CallbackContext callbackContext)
-    {
-        // Debug.Log($"Drag end: dragging={dragging} dragMoved={dragMoved}");
-
-        // on touch device, there is a constant stream of short-lived drag
-        // start, move, end.  a tap will come through as Fire.Canceled, which
-        // we use to trigger Fire() below directly.
-        if (!Input.touchSupported && dragging && !dragMoved)
-        {
-            Fire(callbackContext);
+            // read yaw and pitch from camera's current position
+            Quaternion q = mainCamera.transform.localRotation;
+            yaw = Mathf.Rad2Deg * Mathf.Atan2(2 * q.y * q.w - 2 * q.x * q.z, 1 - 2 * q.y * q.y - 2 * q.z * q.z);
+            pitch = Mathf.Rad2Deg * Mathf.Atan2(2*q.x*q.w - 2*q.y*q.z, 1 - 2*q.x*q.x - 2*q.z*q.z);
         }
 
-        dragging = false;
-        dragMoved = false;
-    }
+        if (Input.GetMouseButton(0))
+        {
+            // Debug.Log(Pointer.current.delta.ReadValue());
+            Vector2 xyDelta = Pointer.current.delta.ReadValue();
+            if (xyDelta.x == 0 && xyDelta.y == 0) return;
+            
+            MoveCamera(xyDelta);
+            
+            touchDeltaSinceLastDown += xyDelta;
+            if (touchDeltaSinceLastDown.magnitude > 2)
+            {
+                //Debug.Log(touchDeltaSinceLastDown.magnitude.ToString());
+                dragMoved = true;
+            }
+        }
 
-    void MoveCamera(Vector2 delta)
-    {
-        /* adapted from Croquet-view code:
-            yaw += 0.005 * deltaX;
-            yaw %= TAU;
-            pitch += -0.005 * deltaY;
-            pitch = Math.min(pitch, toRad(80));
-            pitch = Math.max(pitch, toRad(10));
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (dragging && !dragMoved)
+            {
+                Fire();
+            }
+
+            dragging = false;
+            dragMoved = false;
+        }
+    }
+    
+    void MoveCamera(Vector2 xyDelta)
+    {            
+        /*
+            // from Worldcore demolition
+            yaw += -0.01 * e.xy[0];
+            yaw = yaw % TAU;
+            pitch += -0.01 * e.xy[1];
+            pitch = Math.min(pitch, toRad(-10));
+            pitch = Math.max(pitch, toRad(-80));
+            
+            const pitchMatrix = m4_rotation([1,0,0], pitch)
+            const yawMatrix = m4_rotation([0,1,0], yaw)
+
+            let cameraMatrix = m4_translation([0,0,50]);
+            cameraMatrix = m4_multiply(cameraMatrix,pitchMatrix);
+            cameraMatrix = m4_multiply(cameraMatrix,yawMatrix);
          */
 
-        yaw += Mathf.Rad2Deg * 0.005f * delta.x;
+        // @@ movement ratios currently chosen by trial and error.
+        float moveRatio = Input.touchSupported ? 0.002f : 0.01f;
+        yaw += (moveRatio * Mathf.Rad2Deg * xyDelta.x);
         yaw %= 360;
-        pitch += Mathf.Rad2Deg * -0.005f * delta.y;
+        pitch += (-moveRatio * Mathf.Rad2Deg * xyDelta.y);
         pitch = Mathf.Clamp(pitch, 10, 80);
-
-        // Debug.Log($"yaw: {yaw} pitch: {pitch}");
-
+            
         Vector3 camOffset = new Vector3(0, 0, -50);
         Quaternion yawQ = Quaternion.AngleAxis(yaw, new Vector3(0, 1, 0));
         Quaternion pitchQ = Quaternion.AngleAxis(pitch, new Vector3(1, 0, 0));
@@ -141,10 +119,8 @@ public class MoveAndShoot : MonoBehaviour
         mainCamera.transform.localRotation = camQ;
     }
 
-    void Fire(InputAction.CallbackContext callbackContext)
+    void Fire()
     {
-        // Debug.Log("Shoot");
-
         /*
             const pitchMatrix = m4_rotation([1, 0, 0], pitch);
             const yawMatrix = m4_rotation([0, 1, 0], yaw);

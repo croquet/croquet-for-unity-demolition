@@ -184,9 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fd7bd096a814120ab634e6ff8be7b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appProperties: {fileID: 11400000, guid: d8a4c352ae9b743efa34611f46d63ff2, type: 2}
+  appProperties: {fileID: 11400000, guid: 696db7025ba42401fa7fbac8a4799f6a, type: 2}
   appName: demolition
-  builderPath: demolition
   useNodeJS: 0
   croquetSessionReady: 0
   showRigidbodyStateHighlight: 0

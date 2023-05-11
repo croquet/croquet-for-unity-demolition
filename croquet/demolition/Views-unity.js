@@ -1,7 +1,7 @@
 // Croquet Demolition Demo
 
 import { Pawn, mix, toRad, m4_rotation, m4_multiply, m4_translation, m4_getTranslation, m4_getRotation, GetViewService } from "@croquet/worldcore";
-import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered } from "../common/unity-bridge";
+import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered } from "../build-tools/sources/unity-bridge";
 
 //------------------------------------------------------------------------------------------
 //-- BasePawn -------------------------------------------------------------------------

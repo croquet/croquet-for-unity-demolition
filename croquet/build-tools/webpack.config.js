@@ -6,7 +6,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = env => ({
-    entry : `./${env.buildTarget === 'node' ? 'index-node.js' : 'index.js'}`,
+    entry : `./sources/${env.buildTarget === 'node' ? 'index-node.tmp.js' : 'index.tmp.js'}`,
     output: {
         path: path.join(__dirname, `../../unity/Assets/StreamingAssets/${env.appName}/`),
         pathinfo: false,
@@ -38,7 +38,7 @@ module.exports = env => ({
     },
     plugins: env.buildTarget === 'node' ? [] : [
         new HtmlWebPackPlugin({
-            template: 'index.html',   // input
+            template: './sources/index.html',   // input
             filename: 'index.html',   // output filename in dist/
         }),
     ],
