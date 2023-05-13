@@ -12,7 +12,7 @@ function rgb(r, g, b) {
 // because all objects in this app are governed by Rapier physics, GameActor
 // includes a Rapier mixin.
 export class GameActor extends mix(Actor).with(AM_Spatial, AM_RapierRigidBody) {
-    get pawn() { return 'SmoothedGamePawn' }
+    get pawn() { return 'GamePawn' } // if not otherwise specialised
     get type() { return this._type || "primitiveCube" }
     get color() { return this._color || [0.5, 0.5, 0.5] }
     get alpha() { return this._alpha === undefined ? 1 : this._alpha }
@@ -204,7 +204,8 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         this.active = [];
         this.dynamics = new Set();
 
-        // create a table
+        // create a rigid object for the table, with a view in Unity but
+        // not in THREE
         EnvironmentActor.create({
             parent: this,
             type: 'Table',

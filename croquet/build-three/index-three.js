@@ -2,8 +2,8 @@
 
 import { App, StartWorldcore } from "@croquet/worldcore";
 
-import { MyViewRoot } from "./src/Views-three";
-import { MyModelRoot } from "./src/Models";
+import { MyViewRoot } from "../demolition/Views-three";
+import { MyModelRoot } from "../demolition/Models";
 
 App.makeWidgetDock();
 App.sync = false;

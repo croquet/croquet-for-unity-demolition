@@ -1,7 +1,7 @@
 // Croquet Demolition Demo
 
 import { Pawn, mix, toRad, m4_rotation, m4_multiply, m4_translation, m4_getTranslation, m4_getRotation, GetViewService } from "@croquet/worldcore";
-import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered } from "../build-tools/sources/unity-bridge";
+import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered, PM_GameSpatial } from "../build-tools/sources/unity-bridge";
 
 //------------------------------------------------------------------------------------------
 //-- BasePawn -------------------------------------------------------------------------
@@ -30,6 +30,17 @@ class BasePawn extends Pawn {
 
 }
 BasePawn.register('BasePawn');
+
+class GamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSpatial) {
+
+    constructor(...args) {
+        super(...args);
+
+        this.setGameObject({ type: this.actor.type, color: this.actor.color, alpha: this.actor.alpha });
+    }
+
+}
+GamePawn.register('GamePawn');
 
 class SmoothedGamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSmoothed) {
 
