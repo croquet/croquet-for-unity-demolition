@@ -1,7 +1,7 @@
 // Croquet Demolition Demo
 
-import { Pawn, mix, toRad, m4_rotation, m4_multiply, m4_translation, m4_getTranslation, m4_getRotation, GetViewService } from "@croquet/worldcore";
-import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered, PM_GameSpatial } from "../build-tools/sources/unity-bridge";
+import { Pawn, mix, GetViewService } from "@croquet/worldcore";
+import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered, PM_GameSpatial, PM_GameMaterial } from "../build-tools/sources/unity-bridge";
 
 //------------------------------------------------------------------------------------------
 //-- BasePawn -------------------------------------------------------------------------
@@ -36,18 +36,18 @@ class GamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSpatial) {
     constructor(...args) {
         super(...args);
 
-        this.setGameObject({ type: this.actor.type, color: this.actor.color, alpha: this.actor.alpha });
+        this.setGameObject({ type: this.actor.type });
     }
 
 }
 GamePawn.register('GamePawn');
 
-class SmoothedGamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSmoothed) {
+class SmoothedGamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSmoothed, PM_GameMaterial) {
 
     constructor(...args) {
         super(...args);
 
-        this.setGameObject({ type: this.actor.type, color: this.actor.color, alpha: this.actor.alpha, confirmCreation: true, waitToActivate: true });
+        this.setGameObject({ type: this.actor.type, confirmCreation: true, waitToPresent: true });
     }
 
 }
@@ -91,7 +91,7 @@ export class MyViewRoot extends GameViewRoot {
         this.inputManager = GetViewService('GameInputManager');
 
         this.addEventHandlers();
-        this.placeCamera();
+        //this.placeCamera();
     }
 
     addEventHandlers() {
@@ -105,17 +105,17 @@ export class MyViewRoot extends GameViewRoot {
         });
     }
 
-    placeCamera() {
-        const pitchMatrix = m4_rotation([1, 0, 0], toRad(20));
-        const yawMatrix = m4_rotation([0, 1, 0], toRad(-30));
+    // placeCamera() {
+    //     const pitchMatrix = m4_rotation([1, 0, 0], toRad(20));
+    //     const yawMatrix = m4_rotation([0, 1, 0], toRad(-30));
 
-        let cameraMatrix = m4_translation([0, 0, -50]);
-        cameraMatrix = m4_multiply(cameraMatrix, pitchMatrix);
-        cameraMatrix = m4_multiply(cameraMatrix, yawMatrix);
+    //     let cameraMatrix = m4_translation([0, 0, -50]);
+    //     cameraMatrix = m4_multiply(cameraMatrix, pitchMatrix);
+    //     cameraMatrix = m4_multiply(cameraMatrix, yawMatrix);
 
-        const translation = m4_getTranslation(cameraMatrix);
-        const rotation = m4_getRotation(cameraMatrix);
-        this.pawnManager.updateGeometry('camera', { translationSnap: translation, rotationSnap: rotation });
-    }
+    //     const translation = m4_getTranslation(cameraMatrix);
+    //     const rotation = m4_getRotation(cameraMatrix);
+    //     this.pawnManager.updateGeometry('camera', { translationSnap: translation, rotationSnap: rotation });
+    // }
 
 }
