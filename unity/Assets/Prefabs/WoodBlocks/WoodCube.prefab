@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9189988984234922137}
-  - component: {fileID: 3774805409433006352}
+  - component: {fileID: 3343327700080927694}
+  - component: {fileID: 7086065866186185041}
+  - component: {fileID: -7221336912583898832}
   m_Layer: 0
   m_Name: WoodCube
   m_TagString: Untagged
@@ -33,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3774805409433006352
+--- !u!114 &3343327700080927694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,14 +44,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 9189988984234922136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2069f058ca04f3c97f5b182fcd9b37, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ba7f904bbc740cd8ca66afc5eb26ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   croquetActorId: 
-  croquetGameHandle: 
-  recolorable: 0
-  clickable: 0
-  clickLayers: []
+  croquetHandle: 
+--- !u!114 &7086065866186185041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189988984234922136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d8c949960f5442e9e066e26035fb1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenMoved: 0
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  initializeWithSceneTransform: 0
+  positionDeltaEpsilon: 0.01
+  rotationDeltaEpsilon: 0.01
+  scaleDeltaEpsilon: 0.01
+  linearInterpolation: 0
+  positionLerpFactor: 0.2
+  rotationLerpFactor: 0.2
+  scaleLerpFactor: 0.2
+--- !u!114 &-7221336912583898832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189988984234922136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a6fbb95e4f64250ba6fda297ae6185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1247294650439926242
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44403905, g: 0.49318177, b: 0.5722404, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,6 +136,10 @@ GameObject:
   - component: {fileID: 294985724}
   - component: {fileID: 294985725}
   - component: {fileID: 294985723}
+  - component: {fileID: 294985728}
+  - component: {fileID: 294985727}
+  - component: {fileID: 294985726}
+  - component: {fileID: 294985729}
   m_Layer: 0
   m_Name: CroquetBridge
   m_TagString: Bridge
@@ -187,10 +191,10 @@ MonoBehaviour:
   appProperties: {fileID: 11400000, guid: 696db7025ba42401fa7fbac8a4799f6a, type: 2}
   appName: demolition
   useNodeJS: 0
-  croquetSessionReady: 0
-  showRigidbodyStateHighlight: 0
-  localAvatarId: 
-  cameraOwnerId: 
+  croquetSessionRunning: 0
+  croquetViewId: 
+  loadingInProgress: 1
+  sessionNameValue: -999
 --- !u!114 &294985725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +205,54 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d84310cc2f05420e926ce75127f245b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &294985726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294985719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d84310cc2f05420e926ce75127f245b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &294985727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294985719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e126d841f13fa49678dac14addec6e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &294985728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294985719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102e0a86589084572930d87fc4be9b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &294985729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294985719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7913adbd782fa42ceb85aef558596f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &417734306
@@ -310,6 +362,7 @@ GameObject:
   - component: {fileID: 449559621}
   - component: {fileID: 449559623}
   - component: {fileID: 449559625}
+  - component: {fileID: 449559626}
   m_Layer: 5
   m_Name: QRCode
   m_TagString: Untagged
@@ -394,6 +447,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b0b0d0fe3114435a97028a9981e21a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &449559626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449559619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c79591b6b3dc41a1a3ac63c0c0fc5e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &565565380
@@ -733,8 +798,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148729237}
-  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 15, z: -19}
+  m_LocalRotation: {x: 0.36445567, y: -0.3349266, z: 0.14240806, w: 0.85715586}
+  m_LocalPosition: {x: 23.518288, y: 36.009155, z: -25.499624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

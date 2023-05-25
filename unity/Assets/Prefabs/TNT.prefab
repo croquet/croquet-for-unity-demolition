@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3017531285199334323}
   - component: {fileID: 1247901758}
-  - component: {fileID: -3699857948877878891}
+  - component: {fileID: 5911283074173600927}
+  - component: {fileID: 4939759140927893116}
+  - component: {fileID: 1053473782043620879}
   m_Layer: 0
   m_Name: TNT
   m_TagString: Untagged
@@ -51,7 +53,7 @@ MonoBehaviour:
   explodeEffect: {fileID: 8470853394812297572, guid: 7326c6d4b7dd04887af27019237bf856,
     type: 3}
   visualGeometry: {fileID: 2675425591772251721}
---- !u!114 &-3699857948877878891
+--- !u!114 &5911283074173600927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,14 +62,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 3017531285199334322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2069f058ca04f3c97f5b182fcd9b37, type: 3}
+  m_Script: {fileID: 11500000, guid: 71ba7f904bbc740cd8ca66afc5eb26ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   croquetActorId: 
-  croquetGameHandle: 
-  recolorable: 0
-  clickable: 0
-  clickLayers: []
+  croquetHandle: 
+--- !u!114 &4939759140927893116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017531285199334322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d8c949960f5442e9e066e26035fb1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenMoved: 0
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  initializeWithSceneTransform: 0
+  positionDeltaEpsilon: 0.01
+  rotationDeltaEpsilon: 0.01
+  scaleDeltaEpsilon: 0.01
+  linearInterpolation: 0
+  positionLerpFactor: 0.2
+  rotationLerpFactor: 0.2
+  scaleLerpFactor: 0.2
+--- !u!114 &1053473782043620879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017531285199334322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a6fbb95e4f64250ba6fda297ae6185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3017531285462465304
 PrefabInstance:
   m_ObjectHideFlags: 0
