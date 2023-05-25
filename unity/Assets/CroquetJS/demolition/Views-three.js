@@ -1,6 +1,6 @@
 // Demolition Demo
 
-import { ViewRoot, Pawn, mix, InputManager, PM_ThreeVisible, ThreeRenderManager, PM_Spatial, THREE, PM_Smoothed, toRad, m4_rotation, m4_multiply, WidgetManager2, Widget2, ButtonWidget2, TAU, m4_translation, v3_transform, ThreeInstanceManager, PM_ThreeInstanced, ViewService } from "@croquet/worldcore";
+import { ViewRoot, Pawn, mix, InputManager, PM_ThreeVisible, ThreeRenderManager, PM_Spatial, THREE, PM_Smoothed, toRad, m4_rotation, m4_multiply, Widget2, ButtonWidget2, TAU, m4_translation, v3_transform, ThreeInstanceManager, PM_ThreeInstanced, ViewService, HUD } from "@croquet/worldcore";
 
 function setGeometryColor(geometry, color) {
     const count = geometry.getAttribute("position").count;
@@ -164,7 +164,7 @@ const gun = [0,-1,50];
 export class MyViewRoot extends ViewRoot {
 
     static viewServices() {
-        return [InputManager, ThreeRenderManager, ThreeInstanceManager, WidgetManager2, GodView];
+        return [InputManager, ThreeRenderManager, ThreeInstanceManager, HUD, GodView];
     }
 
     onStart() {
@@ -209,8 +209,8 @@ export class MyViewRoot extends ViewRoot {
 
 
     buildHUD() {
-        const wm = this.service("WidgetManager2");
-        const hud = new Widget2({parent: wm.root, autoSize: [1,1]});
+        const hudService = this.service("HUD");
+        const hud = new Widget2({parent: hudService.root, autoSize: [1,1]});
 
         // const recenter = new ButtonWidget2({parent: hud, translation: [-10,10], size: [100,30], anchor:[1,0], pivot: [1,0]});
         // recenter.label.set({text:"Recenter", point:14, border: [4,4,4,4]});
