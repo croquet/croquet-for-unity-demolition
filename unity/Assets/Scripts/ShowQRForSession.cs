@@ -9,8 +9,19 @@ public class ShowQRForSession : MonoBehaviour
         ShowQRCode qrShower = GameObject.FindObjectOfType<ShowQRCode>();
         if (qrShower != null)
         {
+            CroquetRunner runner = CroquetBridge.Instance.GetComponent<CroquetRunner>();
+            string localReflector = runner.localReflector;
             int sessionNameValue = PlayerPrefs.GetInt("sessionNameValue", 1);
-            qrShower.DisplayQR($"https://croquet.io/demolition-multi/?q={sessionNameValue}");
+            string url;
+            if (localReflector == "")
+            {
+                url = $"https://croquet.io/demolition-multi/?q={sessionNameValue}";
+            }
+            else
+            {
+                url = $"http://{localReflector}/demolition-multi?q={sessionNameValue}&reflector=ws://{localReflector}/reflector&files=http://{localReflector}/files";
+            }
+            qrShower.DisplayQR(url);
         }
     }
 }

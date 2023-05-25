@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitForUserLaunch: 0
+  localReflector: 
   showWebview: 0
 --- !u!114 &294985724
 MonoBehaviour:
@@ -243,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102e0a86589084572930d87fc4be9b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addressablesReady: 0
 --- !u!114 &294985729
 MonoBehaviour:
   m_ObjectHideFlags: 0
