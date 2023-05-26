@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ba7f904bbc740cd8ca66afc5eb26ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorClassName: 
+  actorClassName: BlockActor
+  type: WoodPlatform
   croquetActorId: 
   croquetHandle: 
 --- !u!114 &2403033980201294772

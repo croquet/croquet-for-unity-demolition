@@ -46,7 +46,7 @@ DynamicDemolitionActor.register('DynamicDemolitionActor');
 //------------------------------------------------------------------------------------------
 class BlockActor extends DynamicDemolitionActor {
     get pawn() { return 'BlockPawn' } // no point declaring in every instantiation
-    get shape() { return this._shape || "111" } // we don't hold (or snapshot) any _shape value for the cubes
+    get shape() { return this._shape || "" } // we don't hold (or snapshot) any _shape value for the cubes
 
     init(options) {
         options.ccdEnabled = false;
@@ -56,8 +56,11 @@ class BlockActor extends DynamicDemolitionActor {
     }
 
     buildCollider() {
+        console.log("Building Collider for BlockActor!");
+        console.log("shape is: " + this.shape);
         let d;
-        if (this.shape) {
+        if (this.shape !== "") {
+            console.log("Shape Specified, type unspecified. Assigning type by shape.");
             switch (this.shape) {
                 case "121":
                     d = [0.5, 1, 0.5];
@@ -75,10 +78,12 @@ class BlockActor extends DynamicDemolitionActor {
                     throw Error("UNKNOWN SHAPE!");
             }
         } else {
+            console.log("Type Specified, shape unspecified. Assigning shape by type.");
             switch (this.type) {
                 case "WoodColumn":
                     d = [0.5, 1, 0.5];
                     this._shape = "121";
+                    console.log("set 121 collider shape for WoodColumn!");
                     break;
                 case "WoodPlatform":
                     d = [2, 0.5, 2];
@@ -93,6 +98,10 @@ class BlockActor extends DynamicDemolitionActor {
 
             }
         }
+
+
+        console.log("assigning collider with bounds:"+ d.toString());
+
         const cd = RAPIER.ColliderDesc.cuboid(...d);
         cd.setDensity(1);
         cd.setFriction(0.5);

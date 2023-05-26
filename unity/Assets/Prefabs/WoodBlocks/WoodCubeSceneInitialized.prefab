@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -15,7 +25,7 @@ PrefabInstance:
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
-      value: WoodCube
+      value: WoodCubeSceneInitialized
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922137, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}

@@ -65,6 +65,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ba7f904bbc740cd8ca66afc5eb26ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actorClassName: BarrelActor
+  type: TNT
   croquetActorId: 
   croquetHandle: 
 --- !u!114 &4939759140927893116
@@ -83,7 +85,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   scale: {x: 1, y: 1, z: 1}
-  initializeWithSceneTransform: 0
+  initializeWithSceneTransform: 1
   positionDeltaEpsilon: 0.01
   rotationDeltaEpsilon: 0.01
   scaleDeltaEpsilon: 0.01
