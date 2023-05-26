@@ -1,7 +1,8 @@
 // Demolition Demo
 
-import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel";
+import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore";
 import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier";
+import { InitializationManager } from "./worldcore-extensions";
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
@@ -56,21 +57,41 @@ class BlockActor extends DynamicDemolitionActor {
 
     buildCollider() {
         let d;
-        switch (this.shape) {
-            case "121":
-                d = [0.5, 1, 0.5];
-                this._type = "WoodColumn";
-                break;
-            case "414":
-                d = [2, 0.5, 2];
-                this._type = "WoodPlatform";
-                break;
-            case "111":
-                d = [0.5, 0.5, 0.5];
-                this._type = "WoodCube";
-                break;
-            default:
-                throw Error("UNKNOWN SHAPE!");
+        if (this.shape) {
+            switch (this.shape) {
+                case "121":
+                    d = [0.5, 1, 0.5];
+                    this._type = "WoodColumn";
+                    break;
+                case "414":
+                    d = [2, 0.5, 2];
+                    this._type = "WoodPlatform";
+                    break;
+                case "111":
+                    d = [0.5, 0.5, 0.5];
+                    this._type = "WoodCube";
+                    break;
+                default:
+                    throw Error("UNKNOWN SHAPE!");
+            }
+        } else {
+            switch (this.type) {
+                case "WoodColumn":
+                    d = [0.5, 1, 0.5];
+                    this._shape = "121";
+                    break;
+                case "WoodPlatform":
+                    d = [2, 0.5, 2];
+                    this._shape = "414";
+                    break;
+                case "WoodCube":
+                    d = [0.5, 0.5, 0.5];
+                    this._shape = "111";
+                    break;
+                default:
+                    throw Error("UNKNOWN TYPE!");
+
+            }
         }
         const cd = RAPIER.ColliderDesc.cuboid(...d);
         cd.setDensity(1);
@@ -442,7 +463,7 @@ MyUserManager.register("MyUserManager");
 export class MyModelRoot extends ModelRoot {
 
     static modelServices() {
-        return [RapierManager, MyUserManager];
+        return [RapierManager, MyUserManager, InitializationManager];
     }
 
     init(...args) {

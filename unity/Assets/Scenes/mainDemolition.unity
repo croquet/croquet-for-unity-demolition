@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44403905, g: 0.49318177, b: 0.5722404, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 294985726}
   - component: {fileID: 294985729}
   m_Layer: 0
-  m_Name: CroquetBridge
+  m_Name: Croquet
   m_TagString: Bridge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c98cc1d7bc374101816379b2a2ac02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitForUserLaunch: 0
+  waitForUserLaunch: 1
+  localReflector: 
   showWebview: 0
 --- !u!114 &294985724
 MonoBehaviour:
@@ -243,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102e0a86589084572930d87fc4be9b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addressablesReady: 0
 --- !u!114 &294985729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,6 +808,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!1001 &1637195671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: croquetActorId
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!1 &2031530746
 GameObject:
   m_ObjectHideFlags: 0
