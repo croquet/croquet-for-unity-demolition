@@ -1,8 +1,8 @@
 // Demolition Demo
 
-import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore";
+import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_magnitude, User, UserManager } from "@croquet/worldcore";
 import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier";
-import { InitializationManager } from "./worldcore-extensions";
+import { InitializationManager } from "../build-tools/sources/worldcore-extensions";
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
@@ -238,26 +238,28 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         this.subscribe("ui", "shoot", this.shoot);
         this.subscribe("ui", "new", this.reset);
 
-        this.buildAll();
+        // this.buildAll(); $$$
         this.versionBump = 0;
     }
 
-    shoot(data) {
-        const { gun, index } = data;
-        const aim = v3_normalize(v3_sub([0, 0, 1], gun));
-        const translation = gun; // v3_add(gun, [0, 0, 0]);
-        const color = this.wellKnownModel("ModelRoot").colors[index];
-        const bullet = BulletActor.create({ parent: this, index, color, translation });
-        const force = v3_scale(aim, 95);
-        const spin = v3_scale(sphericalRandom(), Math.random() * 5);
-        bullet.rigidBody.applyImpulse(new RAPIER.Vector3(...force), true);
-        bullet.rigidBody.applyTorqueImpulse(new RAPIER.Vector3(...spin), true);
+    onInitializationStart() {
+        this.destroyAllDynamics(); // @@ maybe not just dynamics?
+    }
+
+    onObjectInitialization(cls, spec) {
+        // all objects created in this world are children of this object
+        spec.parent = this;
+        cls.create(spec);
     }
 
     reset() {
-        this.dynamics.forEach(b => b.destroy());
+        this.destroyAllDynamics();
         // this.say('hasReset'); was thinking of flushing all pawn destructions to Unity - but the pawns haven't even been told yet
-        this.buildAll();
+        // this.buildAll(); $$$
+    }
+
+    destroyAllDynamics() {
+        Array.from(this.dynamics).forEach(b => b.destroy()); // don't iterate on the set itself while removing
     }
 
     buildAll() {
@@ -430,6 +432,18 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         if (addBarrel) BarrelActor.create({ parent: this, translation: [x, y + 5.5, z] });
     }
 
+    shoot(data) {
+        const { gun, index } = data;
+        const aim = v3_normalize(v3_sub([0, 0, 1], gun));
+        const translation = gun; // v3_add(gun, [0, 0, 0]);
+        const color = this.wellKnownModel("ModelRoot").colors[index];
+        const bullet = BulletActor.create({ parent: this, index, color, translation });
+        const force = v3_scale(aim, 95);
+        const spin = v3_scale(sphericalRandom(), Math.random() * 5);
+        bullet.rigidBody.applyImpulse(new RAPIER.Vector3(...force), true);
+        bullet.rigidBody.applyTorqueImpulse(new RAPIER.Vector3(...spin), true);
+    }
+
 }
 BaseActor.register('BaseActor');
 
@@ -472,6 +486,7 @@ export class MyModelRoot extends ModelRoot {
         this.seedColors();
 
         this.base = BaseActor.create({ gravity: [0, -12, 0], translation: [0, 0, 0] });
+        this.service('InitializationManager').setClient(this.base); // who handles inits
     }
 
     seedColors() {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44403905, g: 0.49318177, b: 0.5722404, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,6 +131,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -211,6 +221,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: type
+      value: WoodPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -351,6 +371,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &25225338 stripped
@@ -430,6 +460,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -675,6 +715,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &74309656 stripped
@@ -699,6 +749,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -780,6 +840,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -860,6 +930,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -949,6 +1029,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -1100,6 +1190,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &155945087 stripped
@@ -1119,6 +1219,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: type
+      value: WoodPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
@@ -1195,6 +1305,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1275,6 +1395,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1355,6 +1485,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1435,6 +1575,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1575,6 +1725,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &189940789 stripped
@@ -1590,6 +1750,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1670,6 +1840,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1815,6 +1995,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &218847135 stripped
@@ -1895,6 +2085,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: type
+      value: TNT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: actorClassName
+      value: BarrelActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &221149007 stripped
@@ -1910,6 +2110,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -1990,6 +2200,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -2135,6 +2355,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &254540863 stripped
@@ -2150,6 +2380,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -2290,6 +2530,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &291927333 stripped
@@ -2315,7 +2565,7 @@ GameObject:
   - component: {fileID: 294985726}
   - component: {fileID: 294985729}
   m_Layer: 0
-  m_Name: CroquetBridge
+  m_Name: Croquet
   m_TagString: Bridge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2349,6 +2599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitForUserLaunch: 0
+  localReflector: 
   showWebview: 0
 --- !u!114 &294985724
 MonoBehaviour:
@@ -2366,6 +2617,7 @@ MonoBehaviour:
   appName: demolition
   useNodeJS: 0
   croquetSessionRunning: 0
+  forceInitializeOnStart: 0
   croquetViewId: 
   loadingInProgress: 1
   sessionNameValue: -999
@@ -2417,6 +2669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102e0a86589084572930d87fc4be9b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addressablesReady: 0
 --- !u!114 &294985729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,6 +2689,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -2581,6 +2844,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &311931677 stripped
@@ -2596,6 +2869,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -2676,6 +2959,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -2826,6 +3119,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &345843993 stripped
@@ -2841,6 +3144,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -2916,6 +3229,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -3061,6 +3384,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &401058908 stripped
@@ -3076,6 +3409,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -3156,6 +3499,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -3231,6 +3584,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -3405,6 +3768,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -3485,6 +3858,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -3565,6 +3948,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -3822,6 +4215,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &450600780 stripped
@@ -3907,6 +4310,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &487922095 stripped
@@ -3922,6 +4335,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4002,6 +4425,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4082,6 +4515,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4162,6 +4605,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4242,6 +4695,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4322,6 +4785,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4402,6 +4875,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4547,6 +5030,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &572261410 stripped
@@ -4562,6 +5055,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -4637,6 +5140,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4723,6 +5236,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -4868,6 +5391,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &657887587 stripped
@@ -4883,6 +5416,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -5028,6 +5571,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &679609131 stripped
@@ -5043,6 +5596,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -5188,6 +5751,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &720331268 stripped
@@ -5203,6 +5776,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -5348,6 +5931,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &730365803 stripped
@@ -5427,6 +6020,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -5508,6 +6111,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &741052894 stripped
@@ -5526,7 +6139,7 @@ PrefabInstance:
     - target: {fileID: -4040647978550368506, guid: 1851f877f574f4e5b975955bbf8aeb2a,
         type: 3}
       propertyPath: initializeWithSceneTransform
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8312595857550150184, guid: 1851f877f574f4e5b975955bbf8aeb2a,
         type: 3}
@@ -5663,6 +6276,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &765849293 stripped
@@ -5678,6 +6301,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -5758,6 +6391,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -5838,6 +6481,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -5918,6 +6571,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -6002,6 +6665,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: type
+      value: WoodPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
@@ -6187,6 +6860,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &866977056 stripped
@@ -6262,6 +6945,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &874401236 stripped
@@ -6277,6 +6970,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: type
+      value: WoodPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -6417,6 +7120,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &893719710 stripped
@@ -6496,6 +7209,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -6577,6 +7300,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &907712500 stripped
@@ -6592,6 +7325,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6727,6 +7470,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4939759140927893116, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: initializeWithSceneTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: type
+      value: TNT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: actorClassName
+      value: BarrelActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &929978142 stripped
@@ -6742,6 +7500,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -6822,6 +7590,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6897,6 +7675,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6972,6 +7760,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -7052,6 +7850,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -7192,6 +8000,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &980620163 stripped
@@ -7277,6 +8095,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1012498354 stripped
@@ -7292,6 +8120,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -7442,6 +8280,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1058744070 stripped
@@ -7489,6 +8337,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -7634,6 +8492,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1079910658 stripped
@@ -7714,6 +8582,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1092052559 stripped
@@ -7729,6 +8607,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -7804,6 +8692,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -8050,6 +8948,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1110689747 stripped
@@ -8135,6 +9043,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1126782090 stripped
@@ -8214,6 +9132,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -8295,6 +9223,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1128984976 stripped
@@ -8310,6 +9248,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -8474,6 +9422,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -8554,6 +9512,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -8774,6 +9742,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1194462335 stripped
@@ -8789,6 +9767,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -8864,6 +9852,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -8944,6 +9942,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -9024,6 +10032,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -9169,6 +10187,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1218033052 stripped
@@ -9184,6 +10212,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -9334,6 +10372,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1227396893 stripped
@@ -9349,6 +10397,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -9494,6 +10552,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1273959626 stripped
@@ -9509,6 +10577,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -9584,6 +10662,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -9729,6 +10817,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1334586296 stripped
@@ -9744,6 +10842,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -9824,6 +10932,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -9960,6 +11078,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10105,6 +11233,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1416648643 stripped
@@ -10120,6 +11258,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10265,6 +11413,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1452997605 stripped
@@ -10345,6 +11503,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1464317259 stripped
@@ -10360,6 +11528,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10505,6 +11683,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1508416781 stripped
@@ -10520,6 +11708,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10665,6 +11863,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1544192063 stripped
@@ -10680,6 +11888,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10760,6 +11978,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10840,6 +12068,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -10985,6 +12223,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1624001211 stripped
@@ -11064,6 +12312,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -11220,6 +12478,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1655860729 stripped
@@ -11305,6 +12573,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1663791058 stripped
@@ -11384,6 +12662,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -11465,6 +12753,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1733722463 stripped
@@ -11539,6 +12837,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -11620,6 +12928,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1767842730 stripped
@@ -11699,6 +13017,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
@@ -11780,6 +13108,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: type
+      value: TNT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: actorClassName
+      value: BarrelActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &1774134245 stripped
@@ -11795,6 +13133,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -11875,6 +13223,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -12020,6 +13378,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1817698059 stripped
@@ -12035,6 +13403,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -12115,6 +13493,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -12260,6 +13648,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1834122689 stripped
@@ -12275,6 +13673,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -12355,6 +13763,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -12495,6 +13913,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1927002874 stripped
@@ -12510,6 +13938,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -12660,6 +14098,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1939839355 stripped
@@ -12746,6 +14194,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1961209886 stripped
@@ -12826,6 +14284,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &1961661456 stripped
@@ -12847,6 +14315,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -13011,6 +14489,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -13156,6 +14644,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: type
+      value: TNT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911283074173600927, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: actorClassName
+      value: BarrelActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &2044801383 stripped
@@ -13241,6 +14739,16 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
 --- !u!4 &2044886467 stripped
@@ -13256,6 +14764,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 67093982}
     m_Modifications:
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343327700080927694, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7086065866186185041, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: initializeWithSceneTransform
@@ -13336,6 +14854,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1394829207}
     m_Modifications:
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: type
+      value: WoodPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402408200683104721, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     - target: {fileID: 7644290004070983614, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -13763,6 +15291,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3354957656078024382, guid: de880d3c88bad47ffad8f52c639eb82b,
+        type: 3}
+      propertyPath: type
+      value: WoodPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354957656078024382, guid: de880d3c88bad47ffad8f52c639eb82b,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de880d3c88bad47ffad8f52c639eb82b, type: 3}
 --- !u!1001 &6294638360292965524
@@ -13831,6 +15369,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736683010939235709, guid: 409ef3ed3ad5844139432d550053ea78,
+        type: 3}
+      propertyPath: type
+      value: WoodCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736683010939235709, guid: 409ef3ed3ad5844139432d550053ea78,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 409ef3ed3ad5844139432d550053ea78, type: 3}

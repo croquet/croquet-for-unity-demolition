@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
-      value: WoodColumn
+      value: WoodColumnSceneInitialized
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -71,6 +71,16 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: type
+      value: WoodColumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319378114214678974, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: actorClassName
+      value: BlockActor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7860142b8166774a80931aec25507fe, type: 3}
