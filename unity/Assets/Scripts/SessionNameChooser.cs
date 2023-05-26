@@ -7,6 +7,7 @@ public class SessionNameChooser : MonoBehaviour
 {
     // public reference to the text to update
     public TMPro.TMP_Text sessionNameText;
+    public TMPro.TMP_Text sessionIPText;
 
     private static int SessionNameValue
     {
@@ -27,6 +28,9 @@ public class SessionNameChooser : MonoBehaviour
     public delegate void OnSessionNameChangeDelegate(int newVal);
     public static event OnSessionNameChangeDelegate OnSessionNameChange;
 
+    private static string _sessionIPValue = "";
+    //public delegate void 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,7 @@ public class SessionNameChooser : MonoBehaviour
 
         // recover the session name from save data
         SessionNameValue = PlayerPrefs.GetInt("sessionNameValue");
+        
     }
 
     private void SessionNameChangeHandler(int newVal)
