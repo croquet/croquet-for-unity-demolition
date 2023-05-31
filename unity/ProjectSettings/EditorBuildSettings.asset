@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mainDemolition.unity
     guid: add611c5a047e4a3fbc2b8c590682ce7
+  - enabled: 0
+    path: Assets/Scenes/demolition2.unity
+    guid: 459cbf8e38cfb4dcfb37d2a0ea329c81
+  - enabled: 0
+    path: Assets/Scenes/demolition1.unity
+    guid: 8ebfd44c5475a4e48af4d7310e0e2bbe
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 3057d19cc9906447fbe88e3da6d9e897,
       type: 2}
