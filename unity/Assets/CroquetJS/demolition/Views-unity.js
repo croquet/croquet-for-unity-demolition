@@ -3,33 +3,8 @@
 import { Pawn, mix, GetViewService } from "@croquet/worldcore";
 import { GameInputManager, GameViewRoot, PM_GameSmoothed, PM_GameRendered, PM_GameSpatial, PM_GameMaterial } from "../build-tools/sources/unity-bridge";
 
-//------------------------------------------------------------------------------------------
-//-- BasePawn -------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------
 
-class BasePawn extends Pawn {
-    constructor(...args) {
-        super(...args);
-
-        this.pawnManager = GetViewService('GameEnginePawnManager');
-        this.userManager = this.modelService('UserManager');
-
-        this.subscribe('input', 'pointerUp', this.doPointerUp);
-        this.subscribe('input', 'shoot', this.doShoot);
-    }
-
-    doPointerUp({ button }) {
-        if (button === 1) this.publish('ui', 'new'); // reset the scene
-    }
-
-    doShoot({ gun }) {
-        // globalThis.timedLog("shoot");
-        const index = this.userManager.user(this.viewId).index;
-        this.publish('ui', 'shoot', { gun, index });
-    }
-
-}
-BasePawn.register('BasePawn');
+Pawn.register('BasePawn');
 
 class GamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSpatial) {
 
@@ -53,32 +28,10 @@ class SmoothedGamePawn extends mix(Pawn).with(PM_GameRendered, PM_GameSmoothed, 
 }
 SmoothedGamePawn.register('SmoothedGamePawn');
 
-//------------------------------------------------------------------------------------------
-//-- BarrelPawn ------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------
-
-class BarrelPawn extends SmoothedGamePawn {
-
-    constructor(...args) {
-        super(...args);
-        this.listen('fuseLit', this.fuseLit);
-        this.listen('exploded', this.exploded);
-    }
-
-    fuseLit() {
-        this.sendToUnity('fuseLit');
-    }
-
-    exploded() {
-        this.sendToUnity('exploded');
-    }
-
-}
-BarrelPawn.register('BarrelPawn');
-
 // stub pawn classes that don't need specialisation
 SmoothedGamePawn.register('BlockPawn');
 SmoothedGamePawn.register('BulletPawn');
+SmoothedGamePawn.register('BarrelPawn');
 
 export class MyViewRoot extends GameViewRoot {
 

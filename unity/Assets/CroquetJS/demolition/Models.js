@@ -222,7 +222,10 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
     }
 
     shoot(data) {
-        const { gun, index } = data;
+        // data is a string array with viewId and a comma-separated launch position
+        const [ viewId, positionStr ] = data;
+        const gun = positionStr.split(',').map(Number);
+        const index = this.service('UserManager').user(viewId).index;
         const aim = v3_normalize(v3_sub([0, 0, 1], gun));
         const translation = gun; // v3_add(gun, [0, 0, 0]);
         const color = this.wellKnownModel("ModelRoot").colors[index];

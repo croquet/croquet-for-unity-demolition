@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 
-public class MoveAndShoot : MonoBehaviour
+public class MoveAndShoot : CroquetEventParticipant
 {
     private GameObject mainCamera;
     private float yaw = 0;
@@ -39,7 +39,7 @@ public class MoveAndShoot : MonoBehaviour
         }
         else secondaryClick = Input.GetMouseButtonUp(1);
         
-        if (secondaryClick) CroquetBridge.SendCroquet("event", "pointerUp", "1");
+        if (secondaryClick) Publish("ui", "new");
     }
 
     void ProcessPointer()
@@ -121,6 +121,9 @@ public class MoveAndShoot : MonoBehaviour
 
     void Fire()
     {
+        string viewId = CroquetBridge.Instance.croquetViewId;
+        if (viewId == "") return; // somehow not running
+        
         /*
             const pitchMatrix = m4_rotation([1, 0, 0], pitch);
             const yawMatrix = m4_rotation([0, 1, 0], yaw);
@@ -130,8 +133,11 @@ public class MoveAndShoot : MonoBehaviour
         Quaternion camRot = mainCamera.transform.localRotation;
         Vector3 gunOffset = new Vector3(0, -1, -49);
         Vector3 gun = camRot * gunOffset;
+        // because we need to send both viewId and a vector, use the string-array publish option
+        // with a comma-separated vector
         string positionStr = string.Join<float>(",", new[] { gun.x, gun.y, gun.z });
-        CroquetBridge.SendCroquetSync("event", "shoot", positionStr);
+        string[] strings = new[] { viewId, positionStr };
+        Publish("ui", "shoot", strings);
     }
 
 }
