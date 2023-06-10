@@ -5037,7 +5037,7 @@ MonoBehaviour:
   appName: demolition
   useNodeJS: 0
   croquetSessionRunning: 0
-  forceInitializeOnStart: 0
+  forceInitializeOnStart: 1
   croquetViewId: 
   loadingInProgress: 1
   sessionNameValue: -999

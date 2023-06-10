@@ -4689,7 +4689,7 @@ MonoBehaviour:
   appName: demolition
   useNodeJS: 0
   croquetSessionRunning: 0
-  forceInitializeOnStart: 0
+  forceInitializeOnStart: 1
   croquetViewId: 
   loadingInProgress: 1
   sessionNameValue: -999
@@ -18650,7 +18650,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.013
+      value: 6.002
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -21560,7 +21560,7 @@ PrefabInstance:
     - target: {fileID: 9189988984234922137, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.56
+      value: 8.546
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922137, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -23372,7 +23372,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3030005
+      value: 4.123
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
