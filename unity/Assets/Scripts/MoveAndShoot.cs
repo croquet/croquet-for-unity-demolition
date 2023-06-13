@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 
-public class MoveAndShoot : CroquetEventParticipant
+public class MoveAndShoot : MonoBehaviour
 {
     private GameObject mainCamera;
     private float yaw = 0;
@@ -39,7 +39,7 @@ public class MoveAndShoot : CroquetEventParticipant
         }
         else secondaryClick = Input.GetMouseButtonUp(1);
         
-        if (secondaryClick) Publish("ui", "new");
+        if (secondaryClick) Croquet.Publish("ui", "new");
     }
 
     void ProcessPointer()
@@ -137,7 +137,7 @@ public class MoveAndShoot : CroquetEventParticipant
         // with a comma-separated vector
         string positionStr = string.Join<float>(",", new[] { gun.x, gun.y, gun.z });
         string[] strings = new[] { viewId, positionStr };
-        Publish("ui", "shoot", strings);
+        Croquet.Publish("ui", "shoot", strings);
     }
 
 }

@@ -12,7 +12,12 @@ function rgb(r, g, b) {
 // because all objects in this app are governed by Rapier physics, GameActor
 // includes a Rapier mixin.
 export class GameActor extends mix(Actor).with(AM_Spatial, AM_RapierRigidBody) {
-    get pawn() { return 'GamePawn' } // if not otherwise specialised
+    get pawn() { return 'GamePawn' } // for three.js
+
+    get pawnMixins() { return ['Spatial'] } // for unity
+    get pawnInitializationArgs() { return { type: this.type } } // for unity
+    get pawnListeners() { return [] } // for unity
+
     get type() { return this._type || "primitiveCube" }
     get color() { return this._color || [0.5, 0.5, 0.5] }
     get alpha() { return this._alpha === undefined ? 1 : this._alpha }
@@ -44,7 +49,11 @@ DynamicDemolitionActor.register('DynamicDemolitionActor');
 //-- BlockActor ----------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------
 class BlockActor extends DynamicDemolitionActor {
-    get pawn() { return 'BlockPawn' } // no point declaring in every instantiation
+    get pawn() { return 'BlockPawn' }
+
+    get pawnMixins() { return ['Smoothed'] }
+    get pawnInitializationArgs() { return { type: this.type, confirmCreation: true, waitToPresent: true } }
+
     get shape() { return this._shape || "111" } // we don't hold (or snapshot) any _shape value for the cubes
 
     init(options) {
@@ -88,6 +97,10 @@ BlockActor.register('BlockActor');
 
 class BulletActor extends DynamicDemolitionActor {
     get pawn() { return 'BulletPawn' }
+
+    get pawnMixins() { return ['Smoothed', 'Material'] }
+    get pawnInitializationArgs() { return { type: this.type, confirmCreation: true, waitToPresent: true } }
+
     get index() { return this._index }
 
     init(options) {
@@ -112,6 +125,13 @@ BulletActor.register('BulletActor');
 
 class BarrelActor extends DynamicDemolitionActor {
     get pawn() { return 'BarrelPawn' }
+
+    get pawnMixins() { return ['Smoothed'] }
+    get pawnInitializationArgs() { return { type: this.type, confirmCreation: true, waitToPresent: true } }
+    // $$$ workaround to ensure no timing gap between pawn initialisation and forwarding of events
+    // that the pawn wants to listen for.
+    get pawnListeners() { return ['fuseLit', 'exploded'] }
+
     init(options) {
         options.ccdEnabled = false;
         super.init(options);
@@ -198,6 +218,7 @@ EnvironmentActor.register('EnvironmentActor');
 
 class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
     get pawn() { return 'BasePawn' }
+    get pawnMixins() { return [] } // this actor doesn't want a game-side representation
 
     init(options) {
         super.init(options);
@@ -446,6 +467,12 @@ export class MyModelRoot extends ModelRoot {
 
     static modelServices() {
         return [RapierManager, MyUserManager];
+    }
+
+    // when running with Unity, this is the place to name extra
+    // needed view services.
+    static extraViewServices() {
+        return ['GameInputManager'];
     }
 
     init(...args) {
