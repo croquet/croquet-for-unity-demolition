@@ -21,7 +21,7 @@ public class ShowQRForSession : MonoBehaviour
             else
             {
                 Debug.Log("local reflector session ip setting found, using set ip");
-                url = $"http://{localReflector}/demolition-multi?q={sessionNameValue}&reflector=ws://{localReflector}/reflector&files=http://{localReflector}/files";
+                url = $"https://{localReflector}/demolition-multi?q={sessionNameValue}&reflector=ws://{localReflector}/reflector&files=http://{localReflector}/files";
             }
             
             Debug.Log($"Displaying QR: Session Name Value Loaded: {sessionNameValue} with reflector: {url}");

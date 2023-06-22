@@ -116,10 +116,8 @@ class BarrelActor extends DynamicDemolitionActor {
         options.ccdEnabled = false;
         super.init(options);
         this.buildCollider();
-
         this._type = "TNT";
         this._color = [1, 1, 1];
-
         this.future(2000).set({ hasAccelerometer: true });
     }
 
@@ -166,6 +164,7 @@ class BarrelActor extends DynamicDemolitionActor {
             const push = v3_scale(aim, force);
             block.rigidBody.applyImpulse(new RAPIER.Vector3(...push), true);
         });
+
         this.say('exploded');
         this.future(1000).destroy(); // stick around a bit for the explosion to be communicated, and seen
     }
@@ -212,6 +211,7 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
             position: [0, 0, 0],
             colliderSize: [20, 2, 20],
             colliderPosition: [0, -2, 0]
+            
         });
 
         this.subscribe("ui", "shoot", this.shoot);
@@ -222,8 +222,11 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
     }
 
     shoot(data) {
-        const { gun, index } = data;
-        const aim = v3_normalize(v3_sub([0, 0, 1], gun));
+        const { gun, dir, index } = data;
+        var aim = v3_normalize(v3_sub([0, 0, 1], gun));
+        if (dir){
+            aim = dir;
+        }
         const translation = gun; // v3_add(gun, [0, 0, 0]);
         const color = this.wellKnownModel("ModelRoot").colors[index];
         const bullet = BulletActor.create({ parent: this, index, color, translation });
@@ -274,7 +277,6 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         this.buildBuilding(-2, baseY, -10);
         this.buildBuilding(6, baseY, -10);
         this.buildBuilding(-6, baseY, -10);
-
     }
 
     buildAll_max() {
@@ -339,7 +341,6 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         this.buildBuilding(-2, baseY, -14);
         this.buildBuilding(6, baseY, -14);
         this.buildBuilding(-6, baseY, -14);
-
     }
 
     buildAll_mini() {

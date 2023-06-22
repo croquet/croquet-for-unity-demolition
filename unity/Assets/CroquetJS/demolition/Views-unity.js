@@ -22,10 +22,10 @@ class BasePawn extends Pawn {
         if (button === 1) this.publish('ui', 'new'); // reset the scene
     }
 
-    doShoot({ gun }) {
+    doShoot({ gun, dir }) {
         // globalThis.timedLog("shoot");
         const index = this.userManager.user(this.viewId).index;
-        this.publish('ui', 'shoot', { gun, index });
+        this.publish('ui', 'shoot', { gun, dir, index });
     }
 
 }
@@ -98,9 +98,20 @@ export class MyViewRoot extends GameViewRoot {
         const im = this.inputManager;
         im.addEventHandlers({
             shoot: args => {
-                // args[1] is a comma-separated position for the gun
-                const gun = args[1].split(',').map(Number);
-                im.publish('input', 'shoot', { gun });
+                // args[1] is a comma-separated position for the gun and then its direction
+                // ['shoot', '-14.11279,-4.907934,-26.27322|-0.7352883,-0.5900273,0.3334945']
+                console.log(args);
+                var gun =  args[1].split('|')[0].split(',').map(Number);
+                console.log("gun: "+gun);
+
+                if (args[1].split('|').length>1){
+                    var dir =  args[1].split('|')[1].split(',').map(Number);
+                    im.publish('input', 'shoot', { gun, dir });
+                }
+                else{
+                    im.publish('input', 'shoot', { gun });
+                }
+            
             }
         });
     }

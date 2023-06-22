@@ -5,20 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SessionNameChooser.unity
     guid: 3826572b206a641468b3921d6c5b6671
   - enabled: 1
-    path: Assets/Scenes/mainDemolition.unity
+    path: Assets/Scenes/mainDemolitionXR.unity
     guid: add611c5a047e4a3fbc2b8c590682ce7
   - enabled: 0
-    path: Assets/Scenes/demolition2.unity
-    guid: 459cbf8e38cfb4dcfb37d2a0ea329c81
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/demolition1.unity
-    guid: 8ebfd44c5475a4e48af4d7310e0e2bbe
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b033e89d4cb1bcf43ae2f659bd73c48d,
+      type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 3057d19cc9906447fbe88e3da6d9e897,
       type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: d2c128f842e034acd9ea076a3bc7a88a,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6944dded9f50009449bb85051bd496ce,
       type: 2}
