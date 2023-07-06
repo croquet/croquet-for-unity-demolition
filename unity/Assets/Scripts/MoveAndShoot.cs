@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 
-public class MoveAndShoot : CroquetEventParticipant
+public class MoveAndShoot : MonoBehaviour
 {
     private GameObject mainCamera;
     private float yaw = 0;
@@ -38,8 +38,8 @@ public class MoveAndShoot : CroquetEventParticipant
             lastTouchCount = countNow;
         }
         else secondaryClick = Input.GetMouseButtonUp(1);
-        
-        if (secondaryClick) Publish("ui", "new");
+
+        if (secondaryClick) Croquet.Publish("ui", "new");
     }
 
     void ProcessPointer()
@@ -62,9 +62,9 @@ public class MoveAndShoot : CroquetEventParticipant
             // Debug.Log(Pointer.current.delta.ReadValue());
             Vector2 xyDelta = Pointer.current.delta.ReadValue();
             if (xyDelta.x == 0 && xyDelta.y == 0) return;
-            
+
             MoveCamera(xyDelta);
-            
+
             touchDeltaSinceLastDown += xyDelta;
             if (touchDeltaSinceLastDown.magnitude > 2)
             {
@@ -84,9 +84,9 @@ public class MoveAndShoot : CroquetEventParticipant
             dragMoved = false;
         }
     }
-    
+
     void MoveCamera(Vector2 xyDelta)
-    {            
+    {
         /*
             // from Worldcore demolition
             yaw += -0.01 * e.xy[0];
@@ -94,7 +94,7 @@ public class MoveAndShoot : CroquetEventParticipant
             pitch += -0.01 * e.xy[1];
             pitch = Math.min(pitch, toRad(-10));
             pitch = Math.max(pitch, toRad(-80));
-            
+
             const pitchMatrix = m4_rotation([1,0,0], pitch)
             const yawMatrix = m4_rotation([0,1,0], yaw)
 
@@ -109,7 +109,7 @@ public class MoveAndShoot : CroquetEventParticipant
         yaw %= 360;
         pitch += (-moveRatio * Mathf.Rad2Deg * xyDelta.y);
         pitch = Mathf.Clamp(pitch, 10, 80);
-            
+
         Vector3 camOffset = new Vector3(0, 0, -50);
         Quaternion yawQ = Quaternion.AngleAxis(yaw, new Vector3(0, 1, 0));
         Quaternion pitchQ = Quaternion.AngleAxis(pitch, new Vector3(1, 0, 0));
@@ -123,7 +123,7 @@ public class MoveAndShoot : CroquetEventParticipant
     {
         string viewId = CroquetBridge.Instance.croquetViewId;
         if (viewId == "") return; // somehow not running
-        
+
         /*
             const pitchMatrix = m4_rotation([1, 0, 0], pitch);
             const yawMatrix = m4_rotation([0, 1, 0], yaw);
@@ -137,7 +137,7 @@ public class MoveAndShoot : CroquetEventParticipant
         // with a comma-separated vector
         string positionStr = string.Join<float>(",", new[] { gun.x, gun.y, gun.z });
         string[] strings = new[] { viewId, positionStr };
-        Publish("ui", "shoot", strings);
+        Croquet.Publish("ui", "shoot", strings);
     }
 
 }

@@ -1,7 +1,7 @@
 // Demolition Demo
 
-import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel";
-import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier";
+import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-extraneous-dependencies
+import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier"; // eslint-disable-line import/no-extraneous-dependencies
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
@@ -13,6 +13,7 @@ function rgb(r, g, b) {
 // includes a Rapier mixin.
 export class GameActor extends mix(Actor).with(AM_Spatial, AM_RapierRigidBody) {
     get pawn() { return 'GamePawn' } // if not otherwise specialised
+    get gamePawnType() { return this._type } // Unity prefab to use
     get type() { return this._type || "primitiveCube" }
     get color() { return this._color || [0.5, 0.5, 0.5] }
     get alpha() { return this._alpha === undefined ? 1 : this._alpha }
@@ -180,6 +181,7 @@ class EnvironmentActor extends GameActor {
     init(options) {
         options.rigidBodyType = 'static';
         super.init(options);
+        this._type = 'Table';
         this.buildCollider(options.colliderSize, options.colliderPosition);
         this._color = [1, 1, 1];
     }
@@ -198,6 +200,7 @@ EnvironmentActor.register('EnvironmentActor');
 
 class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
     get pawn() { return 'BasePawn' }
+    get gamePawnType() { return "" } // no Unity pawn
 
     init(options) {
         super.init(options);
@@ -208,7 +211,6 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         // not in THREE
         EnvironmentActor.create({
             parent: this,
-            type: 'Table',
             position: [0, 0, 0],
             colliderSize: [20, 2, 20],
             colliderPosition: [0, -2, 0]
