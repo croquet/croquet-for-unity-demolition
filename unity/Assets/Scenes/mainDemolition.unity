@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitForUserLaunch: 0
-  localReflector: 192.168.1.100:8888
+  localReflector: 
   showWebview: 0
 --- !u!114 &294985724
 MonoBehaviour:
@@ -189,11 +189,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appProperties: {fileID: 11400000, guid: 696db7025ba42401fa7fbac8a4799f6a, type: 2}
   appName: demolition
+  defaultSessionName: 123
   useNodeJS: 0
-  croquetSessionRunning: 0
+  debugLoggingFlags:
+    session: 0
+    messages: 0
+    sends: 0
+    snapshot: 0
+    data: 0
+    hashing: 0
+    subscribe: 0
+    classes: 0
+    ticks: 0
+  sessionRunning: 0
+  sessionName: 0
   croquetViewId: 
-  loadingInProgress: 1
-  sessionNameValue: -999
+  triggerGlitchNow: 0
+  glitchDuration: 3
 --- !u!114 &294985727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102e0a86589084572930d87fc4be9b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assetManifestString: 
   addressablesReady: 0
 --- !u!114 &294985729
 MonoBehaviour:
