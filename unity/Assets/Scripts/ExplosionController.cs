@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosionController : MonoBehaviour
+public class ExplosionController : MonoBehaviour, ICroquetDriven
 {
     public GameObject fuseEffect;
     public GameObject explodeEffect;
@@ -11,8 +11,14 @@ public class ExplosionController : MonoBehaviour
 
     private MeshRenderer visualGeometryRenderer;
 
-    private void Awake()
+    public void PawnInitializationComplete()
     {
+        // because this script is attached to the prefab, attempting to add these subscriptions during
+        // Awake() would likely be too early: before the construction and initialisation of the
+        // EntityComponent (on which adding a Listen subscription depends).
+        // but because all explicit Croquet say() events are automatically forwarded over the
+        // bridge, regardless of whether anyone in Unity has subscribed, adding the subscription
+        // here will be in time to catch any say() that has already been published.
         Croquet.Listen(gameObject, "fuseLit", LightFuse);
         Croquet.Listen(gameObject, "exploded", Explode);
     }
