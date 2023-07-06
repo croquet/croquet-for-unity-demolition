@@ -9,9 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6525333519143686092}
-  - component: {fileID: 7629631826779943493}
-  - component: {fileID: 565756501267817168}
-  - component: {fileID: 492357858807095962}
+  - component: {fileID: -9219005872435301391}
   - component: {fileID: 1204757081265310932}
   m_Layer: 0
   m_Name: Projectile
@@ -36,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7629631826779943493
+--- !u!114 &-9219005872435301391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,50 +43,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6525333519143686095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ba7f904bbc740cd8ca66afc5eb26ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 20a69e2fee9bc4f77a4e5e39e48a9a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  croquetActorId: 
-  croquetHandle: 
---- !u!114 &565756501267817168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6525333519143686095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84d8c949960f5442e9e066e26035fb1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasBeenPlaced: 0
-  hasBeenMoved: 0
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 1}
-  scale: {x: 1, y: 1, z: 1}
-  initializeWithSceneTransform: 0
-  positionDeltaEpsilon: 0.01
-  rotationDeltaEpsilon: 0.01
-  scaleDeltaEpsilon: 0.01
-  linearInterpolation: 0
-  positionLerpFactor: 0.2
-  rotationLerpFactor: 0.2
-  scaleLerpFactor: 0.2
-  desiredLag: 0.05
-  currentLag: 0
---- !u!114 &492357858807095962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6525333519143686095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6a6fbb95e4f64250ba6fda297ae6185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  waitUntilMove: 1
 --- !u!114 &1204757081265310932
 MonoBehaviour:
   m_ObjectHideFlags: 0
