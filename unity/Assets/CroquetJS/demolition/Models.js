@@ -12,6 +12,8 @@ function rgb(r, g, b) {
 // because all objects in this app are governed by Rapier physics, GameActor
 // includes a Rapier mixin.
 export class GameActor extends mix(Actor).with(AM_Spatial, AM_RapierRigidBody) {
+    static okayToIgnore() { return [...super.okayToIgnore(), '$rigidBody'] }
+
     get pawn() { return 'GamePawn' } // if not otherwise specialised
     get gamePawnType() { return this._type } // Unity prefab to use
     get type() { return this._type || "primitiveCube" }
