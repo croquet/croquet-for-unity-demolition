@@ -9,9 +9,10 @@ public class ShowQRForSession : MonoBehaviour
         ShowQRCode qrShower = GameObject.FindObjectOfType<ShowQRCode>();
         if (qrShower != null)
         {
-            CroquetRunner runner = CroquetBridge.Instance.GetComponent<CroquetRunner>();
+            // CroquetRunner runner = CroquetBridge.Instance.GetComponent<CroquetRunner>();
             string localReflector = PlayerPrefs.GetString("sessionIP", "");
-            int sessionNameValue = PlayerPrefs.GetInt("sessionNameValue", 1);
+            // $$$ this needs to take account of startup through a session chooser
+            int sessionNameValue = CroquetBridge.Instance.defaultSessionName;
             string url;
             if (localReflector == "")
             {
@@ -23,7 +24,7 @@ public class ShowQRForSession : MonoBehaviour
                 Debug.Log("local reflector session ip setting found, using set ip");
                 url = $"http://{localReflector}/demolition-multi?q={sessionNameValue}&reflector=ws://{localReflector}/reflector&files=http://{localReflector}/files";
             }
-            
+
             Debug.Log($"Displaying QR: Session Name Value Loaded: {sessionNameValue} with reflector: {url}");
             qrShower.DisplayQR(url);
         }

@@ -1,6 +1,6 @@
 // Croquet Demolition demo on THREE
 
-import { App, StartWorldcore } from "@croquet/worldcore";
+import { App, StartWorldcore } from "@croquet/worldcore-kernel";
 
 import { MyViewRoot } from "../demolition/Views-three";
 import { MyModelRoot } from "../demolition/Models";
@@ -13,7 +13,7 @@ StartWorldcore({
     apiKey: '14lzk3cMcqBBy19rxhxMbMBBedPNGLhnF6oLrJaF4',
     name: App.autoSession(),
     password: 'password',
-    debug: ['session', 'messages'],
+    // debug: ['session', 'messages'],
     model: MyModelRoot,
     view: MyViewRoot,
     tps: 1000 / 27, // aiming to catch a 50ms Rapier update every other tick

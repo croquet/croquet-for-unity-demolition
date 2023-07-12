@@ -1,6 +1,8 @@
 // Demolition Demo
 
-import { ViewRoot, Pawn, mix, InputManager, PM_ThreeVisible, ThreeRenderManager, PM_Spatial, THREE, PM_Smoothed, toRad, m4_rotation, m4_multiply, Widget2, ButtonWidget2, TAU, m4_translation, v3_transform, ThreeInstanceManager, PM_ThreeInstanced, ViewService, HUD } from "@croquet/worldcore";
+import { ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService } from "@croquet/worldcore-kernel";
+import { PM_ThreeVisible, ThreeRenderManager, THREE, ThreeInstanceManager, PM_ThreeInstanced } from "@croquet/worldcore-three";
+import { Widget2, ButtonWidget2, HUD } from "@croquet/worldcore-widget2";
 
 function setGeometryColor(geometry, color) {
     const count = geometry.getAttribute("position").count;
@@ -266,7 +268,8 @@ export class MyViewRoot extends ViewRoot {
         const yawMatrix = m4_rotation([0,1,0], yaw);
         const both = m4_multiply(pitchMatrix, yawMatrix);
         const shoot = v3_transform(gun, both);
-        this.publish("ui", "shoot", { gun: shoot, index });
+        // model is expecting two strings: the viewId, and a comma-separated location
+        this.publish("ui", "shoot", [ this.viewId, shoot.join(',') ]);
     }
 
     buildInstances() {

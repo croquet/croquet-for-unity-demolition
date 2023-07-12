@@ -222,7 +222,7 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         this.subscribe("ui", "new", this.reset);
 
         this.buildAll();
-        this.versionBump = 2;
+        this.versionBump = 3;
     }
 
     shoot(data) {
