@@ -71,7 +71,7 @@ MonoBehaviour:
   positionDeltaEpsilon: 0.01
   rotationDeltaEpsilon: 0.01
   scaleDeltaEpsilon: 0.01
-  positionSmoothTime: 2
+  positionSmoothTime: 0.1
   dampedVelocity: {x: 0, y: 0, z: 0}
   rotationLerpFactor: 0.2
   scaleLerpFactor: 0.2
