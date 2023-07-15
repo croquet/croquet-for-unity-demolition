@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1733904753145427476}
   - component: {fileID: -7913850084546815746}
+  - component: {fileID: -6772019761793923563}
   m_Layer: 0
   m_Name: WoodColumn
   m_TagString: Untagged
@@ -49,6 +50,34 @@ MonoBehaviour:
   - Smoothed
   staticProperties: []
   watchedProperties: []
+--- !u!114 &-6772019761793923563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733904753145427475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d8c949960f5442e9e066e26035fb1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenPlaced: 0
+  hasBeenMoved: 0
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  scale: {x: 1, y: 1, z: 1}
+  initializeWithSceneTransform: 0
+  positionDeltaEpsilon: 0.01
+  rotationDeltaEpsilon: 0.01
+  scaleDeltaEpsilon: 0.01
+  positionSmoothTime: 0.1
+  dampedVelocity: {x: 0, y: 0, z: 0}
+  rotationLerpFactor: 0.2
+  scaleLerpFactor: 0.2
+  desiredLag: 0.05
+  currentLag: 0
+  ballisticNudgeLerp: 0.2
 --- !u!1001 &1733904754247844551
 PrefabInstance:
   m_ObjectHideFlags: 0
