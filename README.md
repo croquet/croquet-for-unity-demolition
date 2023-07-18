@@ -1,5 +1,8 @@
 # Croquet for Unity Demolition
 
+<img width="1998" alt="demolition-screenshot" src="https://github.com/croquet/croquet-for-unity-demolition/assets/123010049/5659adc3-0b85-452b-b69b-8ab217b23bf6">
+
+
 This repository contains a Croquet for Unity (C4U) view of Brian Upton's "Demolition" app built on Worldcore.
 
 The most important directories are the following:
