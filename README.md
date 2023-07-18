@@ -7,6 +7,9 @@ The most important directories are the following:
 * `unity/Assets/Scenes/` - the `mainDemolition` scene, along with the `SessionChooser` scene (explained below) that allows a group of players to agree on a session number to join together.
 * `unity/Assets/CroquetJS/` - JavaScript source for building the Croquet side of the game. You can edit the code under this directory to change the game's behaviour.
 
+# Questions
+Please feel free to ask questions on our [discord](https://croquet.io/discord).
+
 # Setup
 To setup the project take the following steps
 
@@ -16,14 +19,13 @@ Node is a prerequisite for installing JavaScript libraries like Croquet and Worl
 Install node.js and the node package manager (npm) for your platform here (LTS Recommended): https://nodejs.org/en/download
 
 
-
 ## 2.0 Clone the Repo
-
 ```
 git clone https://github.com/croquet/croquet-for-unity-demolition.git
 ```
 
 Note: this repository's large size is predominantly due to our including a specific version of NodeJS for Windows.  On Windows we normally use NodeJS to run the JavaScript side of a C4U session, since Unity on Windows is currently unable to use the WebView mechanism that Croquet prefers.  On MacOS we use the WebView by default, but if a project has the necessary entry point for NodeJS execution (as the Demolition game does), NodeJS can be used on Mac as well.
+
 
 ## 3.0 Load the Unity Project
 
@@ -73,9 +75,8 @@ On the `CroquetSettings` asset, fill in the **Path to Node** field with the path
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
+
 ## 6.0 Run the Game
-
-
 In the Project Navigator, go to `Assets/Scenes` and double-click `mainDemolition.unity`.  If a "TMP importer" dialog comes up at this point, hit the top button ("Import TMP Essentials") then close the dialog. This is just part of the standard setup for Text Mesh Pro (which is used for all the UI).
 
 In the editor's top menu, go to the `Croquet` drop-down and select `Build JS on Play` so that it has a check-mark next to it.
@@ -83,7 +84,6 @@ In the editor's top menu, go to the `Croquet` drop-down and select `Build JS on 
 Press the play button.  Because this is the first time you have built the app, it will initiate a full webpack build of the JavaScript code - eventually writing webpack's log to the Unity console, each line prefixed with "JS builder".  You should then see console output for startup of the app - ending with "Croquet session running!", at which point the game should start to run.
 
 ### 6.1 Specifying a Croquet Session Name
-
 _This is an optional configurability feature, not required for you to start playing with Demolition._
 
 Croquet sessions are inherently multi-user, and this applies fully to the sessions that drive a C4U application. If you start the same application on multiple devices, you can expect that all those devices will be in the application together - for example, all cooperating in the Demolition app.
@@ -107,11 +107,20 @@ Our initial C4U applications - including Demolition - come with two alternative 
 The Demolition app is an instantly-joinable multiplayer app where you and your friends are shooting at a structure of heavy blocks and some embedded barrels of TNT that explode when disturbed.
 
 ## Controls
+
+### Desktop Controls
 |Input|Function|
 |--------------|-------------------------------------------------------------|
 | left click   | Shoot                                                       |
 | left drag    | Move shooting position                                      |
 | right click  | Rebuild initial block structure                             |
+
+### Mobile Controls
+|Input|Function|
+|--------------|-------------------------------------------------------------|
+| single tap   | Shoot                                                       |
+|      drag    | Move shooting position                                      |
+| two-finger tap | Rebuild initial block structure                             |
 
 
 # Debugging Techniques
@@ -166,5 +175,11 @@ We have found that distributing a standalone MacOS build (`.app` file) requires 
 
     e. if prompted to give permission for the app to access the network, agree.
 
-# Questions
-Please feel free to ask questions on our [discord](https://croquet.io/discord).
+
+# Contribution
+Contributions to the project are welcome as these projects are open source and we encourage community involvement.
+
+1. Base your `feature/my-feature-name` branch off of `develop` branch
+2. Make your changes
+3. Open a PR against the `develop` branch
+4. Discuss and Review the PR with the team
