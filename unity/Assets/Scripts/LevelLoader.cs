@@ -14,7 +14,7 @@ public class LevelLoader : MonoBehaviour
 
     public static void TmpStartDefaultSession()
     {
-        CroquetBridge bridge = Object.FindObjectOfType<CroquetBridge>();
+        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
         if (bridge != null)
         {
             bridge.SetSessionName(""); // this will start the session using the default name
