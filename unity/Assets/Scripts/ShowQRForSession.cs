@@ -15,7 +15,7 @@ public class ShowQRForSession : MonoBehaviour
         if (qrShower != null)
         {
             string localReflector = PlayerPrefs.GetString("sessionIP", "");
-            int sessionNameValue = CroquetBridge.Instance.sessionName;
+            string sessionNameValue = CroquetBridge.Instance.sessionName;
             string url;
             if (localReflector == "")
             {
