@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 92f5af5d562754a9c9c687ad2c809358
   - enabled: 1
-    path: Assets/Scenes/demolition.unity
+    path: Assets/Scenes/demolition1.unity
     guid: add611c5a047e4a3fbc2b8c590682ce7
+  - enabled: 1
+    path: Assets/Scenes/demolition2.unity
+    guid: 9ebfe919c6909fe4d9a54f7596594c90
+  - enabled: 0
+    path: Assets/Scenes/PrefabView.unity
+    guid: 436dcf17f032ed44ea17c6b8e066c7af
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 3057d19cc9906447fbe88e3da6d9e897,
       type: 2}

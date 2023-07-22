@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37090978, g: 0.3783826, b: 0.35722497, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1237,8 +1237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 501.57983, y: 609.30383}
-  m_SizeDelta: {x: 1003.1597, y: 1218.6077}
+  m_AnchoredPosition: {x: 680.5, y: 338.99997}
+  m_SizeDelta: {x: 1361, y: 678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &609262302
 MonoBehaviour:
@@ -1805,12 +1805,12 @@ PrefabInstance:
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
       propertyPath: initialSceneName
-      value: demolition
+      value: demolition1
       objectReference: {fileID: 0}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
       propertyPath: defaultSessionName
-      value: ABCD4
+      value: ABCD10
       objectReference: {fileID: 0}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
