@@ -1804,13 +1804,23 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
+      propertyPath: initialSceneName
+      value: demolition
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
+        type: 3}
       propertyPath: defaultSessionName
-      value: ABCD2
+      value: ABCD4
       objectReference: {fileID: 0}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
       propertyPath: debugLoggingFlags.messages
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
+        type: 3}
+      propertyPath: showWebview
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
