@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
+    public TMP_InputField sessionNameInputField;
     
     public static void LoadNextCroquetLevel()
     {
@@ -20,4 +22,24 @@ public class LevelController : MonoBehaviour
         Debug.Log($"Next Level Button Attempting to load scene with sceneBuildIndex {demolitionLevelToLoad}");
         Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
     }
+    
+    public static void StartDefaultSession()
+    {
+        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
+        if (bridge != null)
+        {
+            bridge.SetSessionName(""); // this will start the session using the default name
+        }
+    }
+    
+    public void StartSessionWithName()
+    {
+        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
+        if (bridge != null)
+        {
+            string sessionName = sessionNameInputField.text;
+            bridge.SetSessionName(sessionName); // this will start the session using the default name
+        }
+    }
+    
 }

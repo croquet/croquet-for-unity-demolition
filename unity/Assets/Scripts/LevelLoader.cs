@@ -12,12 +12,5 @@ public class LevelLoader : MonoBehaviour
         Debug.Log($"Loading Level: {level}");
     }
 
-    public static void TmpStartDefaultSession()
-    {
-        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
-        if (bridge != null)
-        {
-            bridge.SetSessionName(""); // this will start the session using the default name
-        }
-    }
+
 }
