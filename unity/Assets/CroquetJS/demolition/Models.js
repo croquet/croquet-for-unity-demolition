@@ -189,6 +189,8 @@ BarrelActor.register('BarrelActor');
 // static objects representing the scene boundaries
 class EnvironmentActor extends GameActor {
     // get pawn() { return 'EnvironmentPawn'; } no - use default GamePawn
+    get gamePawnType() { return '' } // no Unity pawn
+
     init(options) {
         options.rigidBodyType = 'static';
         super.init(options);
@@ -211,7 +213,7 @@ EnvironmentActor.register('EnvironmentActor');
 
 class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld, AM_InitializationClient) {
     get pawn() { return 'BasePawn' }
-    get gamePawnType() { return "" } // no Unity pawn
+    get gamePawnType() { return '' } // no Unity pawn
 
     init(options) {
         super.init(options);
@@ -234,8 +236,12 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld, AM_Initializ
         this.versionBump = 0;
     }
 
-    onInitializationStart() {
+    onPrepareForInitialization() {
         this.destroyAllDynamics(); // $$$ perhaps no longer just dynamics?
+    }
+
+    onInitializationStart() {
+        // maybe nothing special to do
     }
 
     onObjectInitialization(cls, spec) {

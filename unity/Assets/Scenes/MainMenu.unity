@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37090978, g: 0.3783826, b: 0.35722497, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1807,6 +1807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
+      propertyPath: useNodeJS
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
+        type: 3}
       propertyPath: sessionName
       value: 
       objectReference: {fileID: 0}
@@ -1824,12 +1829,12 @@ PrefabInstance:
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
       propertyPath: defaultSessionName
-      value: ABCD1034534
+      value: ABCD10345342
       objectReference: {fileID: 0}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
       propertyPath: debugLoggingFlags.messages
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
@@ -1839,7 +1844,7 @@ PrefabInstance:
     - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
       propertyPath: waitForUserLaunch
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e816dfed6d2248eba7d62bdd192bdb9, type: 3}

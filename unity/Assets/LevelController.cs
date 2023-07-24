@@ -8,22 +8,22 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     public TMP_InputField sessionNameInputField;
-    
+
     public static void LoadNextCroquetLevel()
     {
-        Debug.Log($"number of scenes active in build settings: ${SceneManager.sceneCountInBuildSettings}");
+        Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
         Debug.Log($"current sceneBuildIndex is {SceneManager.GetActiveScene().buildIndex}");
-            
+
         int demolitionLevelToLoad = (SceneManager.GetActiveScene().buildIndex + 1)%(SceneManager.sceneCountInBuildSettings);
-        
+
         // skip the main menu
         if (demolitionLevelToLoad == 0)
             demolitionLevelToLoad = 1;
-        
+
         Debug.Log($"Next Level Button Attempting to load scene with sceneBuildIndex {demolitionLevelToLoad}");
         Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
     }
-    
+
     public static void StartDefaultSession()
     {
         CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
@@ -32,7 +32,7 @@ public class LevelController : MonoBehaviour
             bridge.SetSessionName(""); // this will start the session using the default name
         }
     }
-    
+
     public void StartRandomSession()
     {
         CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
@@ -41,7 +41,7 @@ public class LevelController : MonoBehaviour
             bridge.SetSessionName(GenerateValidSessionName()); // this will start the session using the default name
         }
     }
-    
+
     public void StartSessionWithName()
     {
         CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
@@ -63,5 +63,5 @@ public class LevelController : MonoBehaviour
 
         return sessionName.ToString();
     }
-    
+
 }

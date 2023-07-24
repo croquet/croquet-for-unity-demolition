@@ -47,12 +47,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - demolition1
     - demolition2
-  - m_GUID: 1851f877f574f4e5b975955bbf8aeb2a
-    m_Address: Table
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - demolition1
-    - demolition2
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 1398c81f484a44649a064676c86f132e, type: 2}
   m_SchemaSet:
