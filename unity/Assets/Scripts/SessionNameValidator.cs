@@ -12,15 +12,23 @@ namespace TMPro
         // Custom text input validation function
         public override char Validate(ref string text, ref int pos, char ch)
         {
+            // Force Capital
+            if (ch >= 'a' && ch <= 'z')
+            {
+                ch = (char)((int)ch - 32);
+            }
+            // Force Alphabetic
             if (ch >= 'A' && ch <= 'Z')
             {
-                if (text.Length < 5)
+                // Force Maximum Length
+                if (text.Length < lengthLimit)
                 {
                     text += ch;
                     pos += 1;
                 }
                 return ch;
             }
+            // If invalid, do not enter character
             return (char)0;
         }
     }

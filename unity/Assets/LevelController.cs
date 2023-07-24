@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,6 +33,15 @@ public class LevelController : MonoBehaviour
         }
     }
     
+    public void StartRandomSession()
+    {
+        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
+        if (bridge != null)
+        {
+            bridge.SetSessionName(GenerateValidSessionName()); // this will start the session using the default name
+        }
+    }
+    
     public void StartSessionWithName()
     {
         CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
@@ -40,6 +50,18 @@ public class LevelController : MonoBehaviour
             string sessionName = sessionNameInputField.text;
             bridge.SetSessionName(sessionName); // this will start the session using the default name
         }
+    }
+
+    public string GenerateValidSessionName()
+    {
+        StringBuilder sessionName = new StringBuilder();
+        for (int i = 0; i < 5; i++)
+        {
+            int randomNumber = Random.Range(65, 91); // CAPITAL ALPHABETIC
+            sessionName.Append((char)randomNumber);
+        }
+
+        return sessionName.ToString();
     }
     
 }
