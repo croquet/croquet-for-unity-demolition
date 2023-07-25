@@ -48,7 +48,14 @@ public class LevelController : MonoBehaviour
         if (bridge != null)
         {
             string sessionName = sessionNameInputField.text;
-            bridge.SetSessionName(sessionName); // this will start the session using the default name
+            if (sessionName.Length == 5)
+            {
+                bridge.SetSessionName(sessionName); // this will start the session using the default name
+            }
+            else
+            {
+                Debug.Log("Provided Session Name is not of full length 5!");
+            }
         }
     }
 
