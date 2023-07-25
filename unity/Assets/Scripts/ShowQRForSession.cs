@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class ShowQRForSession : MonoBehaviour
 {
-    void Awake()
+    private ShowQRCode qrShower;
+
+    void Start()
     {
-        Croquet.Subscribe("croquet", "sessionRunning", CroquetSessionRunning);
+        qrShower = GameObject.FindObjectOfType<ShowQRCode>();
+        if (qrShower == null) enabled = false;
     }
 
-    void CroquetSessionRunning()
+    void Update()
     {
-        ShowQRCode qrShower = GameObject.FindObjectOfType<ShowQRCode>();
-        if (qrShower != null)
-        {
+        if (CroquetBridge.Instance.croquetSessionState == "running") { // @@ provide static Croquet accessor
             string localReflector = PlayerPrefs.GetString("sessionIP", "");
             string sessionNameValue = CroquetBridge.Instance.sessionName;
             string url;
@@ -31,6 +32,8 @@ public class ShowQRForSession : MonoBehaviour
             string reflectorMsg = localReflector == "" ? "" : $" on reflector {localReflector}";
             Debug.Log($"Displaying QR code for session {sessionNameValue}{reflectorMsg}");
             qrShower.DisplayQR(url);
+
+            enabled = false;
         }
     }
 }
