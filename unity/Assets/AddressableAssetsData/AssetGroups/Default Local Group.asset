@@ -23,30 +23,35 @@ MonoBehaviour:
     m_SerializedLabels:
     - demolition1
     - demolition2
+    - demolition3
   - m_GUID: 19fc6f644a3a0e841a0049341502ead8
     m_Address: Projectile
     m_ReadOnly: 0
     m_SerializedLabels:
     - demolition1
     - demolition2
+    - demolition3
   - m_GUID: b77db91c1a591d4409bfaa9cf403322d
     m_Address: WoodPlatform
     m_ReadOnly: 0
     m_SerializedLabels:
     - demolition1
     - demolition2
+    - demolition3
   - m_GUID: c7860142b8166774a80931aec25507fe
     m_Address: WoodColumn
     m_ReadOnly: 0
     m_SerializedLabels:
     - demolition1
     - demolition2
+    - demolition3
   - m_GUID: d6b5720d36d30406fa312e065ee0a7c1
     m_Address: WoodCube
     m_ReadOnly: 0
     m_SerializedLabels:
     - demolition1
     - demolition2
+    - demolition3
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 1398c81f484a44649a064676c86f132e, type: 2}
   m_SchemaSet:
