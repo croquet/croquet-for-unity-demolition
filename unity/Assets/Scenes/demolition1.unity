@@ -131,6 +131,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -286,6 +291,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -365,6 +375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -516,6 +531,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -595,6 +615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -676,6 +701,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -756,6 +786,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -831,6 +866,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -910,6 +950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -991,6 +1036,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -1066,6 +1116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -1141,6 +1196,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -1216,6 +1276,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -1291,6 +1356,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -1371,6 +1441,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -1446,6 +1521,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -1526,6 +1606,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -1601,6 +1686,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -1609,7 +1699,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -1676,6 +1766,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -1756,6 +1851,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -1831,6 +1931,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -1910,6 +2015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -2066,6 +2176,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -2141,6 +2256,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -2216,6 +2336,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -2291,6 +2416,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -2455,6 +2585,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -2593,6 +2728,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -2672,6 +2812,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -2753,6 +2898,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -2833,6 +2983,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -2908,6 +3063,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -2987,6 +3147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -3068,6 +3233,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -3147,6 +3317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -3228,6 +3403,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -3303,6 +3483,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3383,6 +3568,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -3458,6 +3648,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3533,6 +3728,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3608,6 +3808,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3683,6 +3888,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3758,6 +3968,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3872,6 +4087,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -3880,7 +4100,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -3951,6 +4171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -4032,6 +4257,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -4107,6 +4337,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008539790}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -4187,6 +4422,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -4262,6 +4502,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -4341,6 +4586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -4422,6 +4672,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -4501,6 +4756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -4671,6 +4931,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -4750,6 +5015,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -4831,6 +5101,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -4911,6 +5186,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -4986,6 +5266,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -5066,6 +5351,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -5141,6 +5431,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -5216,6 +5511,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -5291,6 +5591,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -5366,6 +5671,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -5446,6 +5756,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -5521,6 +5836,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -5600,6 +5920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -5681,6 +6006,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -5760,6 +6090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -5916,6 +6251,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -5991,6 +6331,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6070,6 +6415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -6151,6 +6501,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6226,6 +6581,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -6305,6 +6665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -6386,6 +6751,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6461,6 +6831,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -6619,6 +6994,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -6694,6 +7074,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -6774,6 +7159,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -6849,6 +7239,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -6924,6 +7319,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -6999,6 +7399,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7079,6 +7484,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -7154,6 +7564,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7234,6 +7649,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -7309,6 +7729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7389,6 +7814,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -7464,6 +7894,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7544,6 +7979,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -7619,6 +8059,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7699,6 +8144,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -7774,6 +8224,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7849,6 +8304,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -7924,6 +8384,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -7999,6 +8464,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -8079,6 +8549,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -8154,6 +8629,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -8289,6 +8769,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &730006195 stripped
@@ -8409,6 +8894,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &731929002 stripped
@@ -8464,6 +8954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -8540,6 +9035,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -8619,6 +9119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -8755,6 +9260,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &777855881 stripped
@@ -8774,6 +9284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -8855,6 +9370,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -8934,6 +9454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -9058,6 +9583,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -9138,6 +9668,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -9213,6 +9748,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -9288,6 +9828,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -9368,6 +9913,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -9443,6 +9993,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -9518,6 +10073,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -9593,6 +10153,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -9672,6 +10237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -9753,6 +10323,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -9832,6 +10407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -9952,6 +10532,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -10032,6 +10617,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -10107,6 +10697,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -10115,7 +10710,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -10186,6 +10781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -10330,6 +10930,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -10409,6 +11014,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -10490,6 +11100,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -10570,6 +11185,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -10645,6 +11265,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -10720,6 +11345,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -10728,7 +11358,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -10795,6 +11425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -10870,6 +11505,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -10950,6 +11590,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -11025,6 +11670,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -11100,6 +11750,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -11175,6 +11830,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -11310,6 +11970,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &963778543 stripped
@@ -11329,6 +11994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -11410,6 +12080,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -11485,6 +12160,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2060166609}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -11560,6 +12240,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -11639,6 +12324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -11720,6 +12410,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -11795,6 +12490,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -11875,6 +12575,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -11950,6 +12655,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -12025,6 +12735,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -12191,6 +12906,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -12270,6 +12990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -12351,6 +13076,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -12431,6 +13161,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -12506,6 +13241,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -12619,6 +13359,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -12694,6 +13439,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -12769,6 +13519,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -12844,6 +13599,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -12923,6 +13683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -13134,6 +13899,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &1090735995 stripped
@@ -13149,6 +13919,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -13224,6 +13999,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -13299,6 +14079,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -13374,6 +14159,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -13454,6 +14244,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -13529,6 +14324,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737080076}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -13604,6 +14404,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -13679,6 +14484,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -13754,6 +14564,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -13829,6 +14644,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -13904,6 +14724,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -13979,6 +14804,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -14138,6 +14968,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -14213,6 +15048,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -14288,6 +15128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -14363,6 +15208,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -14443,6 +15293,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -14518,6 +15373,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1180068809}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -14598,6 +15458,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -14673,6 +15538,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1180068809}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -14784,6 +15654,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -14902,6 +15777,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -14977,6 +15857,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15057,6 +15942,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -15132,6 +16022,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15207,6 +16102,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15282,6 +16182,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15357,6 +16262,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15432,6 +16342,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15610,6 +16525,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -15690,6 +16610,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -15765,6 +16690,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737080076}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -15840,6 +16770,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737080076}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -15915,6 +16850,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -15990,6 +16930,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16065,6 +17010,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16140,6 +17090,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16215,6 +17170,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16295,6 +17255,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -16370,6 +17335,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -16445,6 +17415,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16525,6 +17500,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -16600,6 +17580,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008539790}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -16743,6 +17728,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -16818,6 +17808,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16893,6 +17888,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16968,6 +17968,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -16976,7 +17981,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -17043,6 +18048,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -17256,6 +18266,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2060166609}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -17336,6 +18351,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -17411,6 +18431,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -17491,6 +18516,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -17566,6 +18596,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -17691,6 +18726,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -17770,6 +18810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -17851,6 +18896,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -17926,6 +18976,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -18061,6 +19116,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &1472876697 stripped
@@ -18076,6 +19136,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -18151,6 +19216,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -18226,6 +19296,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -18301,6 +19376,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -18381,6 +19461,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -18456,6 +19541,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -18531,6 +19621,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -18610,6 +19705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -18691,6 +19791,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -18766,6 +19871,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -18841,6 +19951,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -18916,6 +20031,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19068,6 +20188,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19143,6 +20268,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19218,6 +20348,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19226,7 +20361,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -19293,6 +20428,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19301,7 +20441,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -19372,6 +20512,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -19453,6 +20598,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -19528,6 +20678,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -19603,6 +20758,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19678,6 +20838,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19758,6 +20923,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -19833,6 +21003,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -19908,6 +21083,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -19987,6 +21167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -20068,6 +21253,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -20143,6 +21333,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -20218,6 +21413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -20297,6 +21497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -20378,6 +21583,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -20457,6 +21667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -20622,6 +21837,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -20701,6 +21921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -20782,6 +22007,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -20862,6 +22092,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -20937,6 +22172,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -21017,6 +22257,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -21092,6 +22337,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -21167,6 +22417,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2060166609}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -21247,6 +22502,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -21322,6 +22582,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -21401,6 +22666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -21537,6 +22807,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5766743935676724596, guid: 48560d340992d3d45819b72dfe335e35,
+        type: 3}
+      propertyPath: pawnType
+      value: TNT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48560d340992d3d45819b72dfe335e35, type: 3}
 --- !u!4 &1785850384 stripped
@@ -21556,6 +22831,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -21675,6 +22955,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200372429}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -21750,6 +23035,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008539790}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -21825,6 +23115,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -21905,6 +23200,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -21980,6 +23280,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 361622097}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -21988,7 +23293,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -22055,6 +23360,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586746774}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22063,7 +23373,7 @@ PrefabInstance:
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427476, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
@@ -22130,6 +23440,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22209,6 +23524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -22290,6 +23610,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -22365,6 +23690,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1801614913}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22440,6 +23770,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22520,6 +23855,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -22595,6 +23935,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22675,6 +24020,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -22750,6 +24100,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22825,6 +24180,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22900,6 +24260,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -22979,6 +24344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -23060,6 +24430,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -23135,6 +24510,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -23215,6 +24595,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -23290,6 +24675,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038680101}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -23365,6 +24755,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -23440,6 +24835,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -23520,6 +24920,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -23595,6 +25000,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 793354815}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -23711,6 +25121,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -23791,6 +25206,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -23870,6 +25290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -24040,6 +25465,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -24115,6 +25545,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1038012791}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -24195,6 +25630,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -24270,6 +25710,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -24381,6 +25826,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 731722204}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -24460,6 +25910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -24541,6 +25996,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -24616,6 +26076,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1180068809}
     m_Modifications:
+    - target: {fileID: -4817802358924130527, guid: b77db91c1a591d4409bfaa9cf403322d,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 7899102900291132214, guid: b77db91c1a591d4409bfaa9cf403322d,
         type: 3}
       propertyPath: m_Name
@@ -24691,6 +26156,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -24770,6 +26240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
@@ -24926,6 +26401,11 @@ PrefabInstance:
       propertyPath: initializeWithSceneTransform
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
+      objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
       propertyPath: m_Name
@@ -25001,6 +26481,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1225043469}
     m_Modifications:
+    - target: {fileID: -7913850084546815746, guid: c7860142b8166774a80931aec25507fe,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodColumn
+      objectReference: {fileID: 0}
     - target: {fileID: 1733904753145427475, guid: c7860142b8166774a80931aec25507fe,
         type: 3}
       propertyPath: m_Name
@@ -25080,6 +26565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: initializeWithSceneTransform
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240829435965744482, guid: d6b5720d36d30406fa312e065ee0a7c1,
+        type: 3}
+      propertyPath: pawnType
+      value: WoodCube
       objectReference: {fileID: 0}
     - target: {fileID: 9189988984234922136, guid: d6b5720d36d30406fa312e065ee0a7c1,
         type: 3}
