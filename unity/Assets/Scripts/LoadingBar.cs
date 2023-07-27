@@ -17,6 +17,10 @@ public class LoadingBar : LoadingProgressDisplay
 
     void Awake()
     {
+        // if a long-lived LoadingProgressDisplay has come across from another scene, delete this one
+        LoadingProgressDisplay[] loadingObjs = FindObjectsOfType<LoadingProgressDisplay>();
+        if (loadingObjs.Length > 1) Destroy(this.gameObject);
+
         // be ready in case Start() in some client wants to set a value here
         slider = GetComponentInChildren<Slider>();
         msgTxt = GetComponentInChildren<TextMeshProUGUI>();
