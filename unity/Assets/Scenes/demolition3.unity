@@ -3106,6 +3106,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6408879918408363025, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1148729239}
     - target: {fileID: 6408879919373019296, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
         type: 3}
       propertyPath: m_Name
@@ -5508,6 +5513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: QRCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7578248813785219738, guid: 7ab3d5a89a43f504d997262da5d81a6e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7578248813785219812, guid: 7ab3d5a89a43f504d997262da5d81a6e,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -5527,6 +5537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578248813785219813, guid: 7ab3d5a89a43f504d997262da5d81a6e,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 7578248813785219814, guid: 7ab3d5a89a43f504d997262da5d81a6e,
         type: 3}
