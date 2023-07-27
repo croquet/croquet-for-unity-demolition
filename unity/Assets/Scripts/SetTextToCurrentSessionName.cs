@@ -5,9 +5,14 @@ using UnityEngine;
 
 public class SetTextToCurrentSessionName : MonoBehaviour
 {
-    void Start()
+    void Update()
     {
-        gameObject.GetComponent<TMP_Text>().text =  FindObjectOfType<CroquetBridge>().sessionName;
+        string sessionName = CroquetBridge.Instance.sessionName;
+        if (sessionName != "")
+        {
+            gameObject.GetComponent<TMP_Text>().text = sessionName;
+            enabled = false;
+        }
     }
 
 }
