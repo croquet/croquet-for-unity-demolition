@@ -2036,11 +2036,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
-      propertyPath: sessionName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
-        type: 3}
       propertyPath: appProperties
       value: 
       objectReference: {fileID: 11400000, guid: 696db7025ba42401fa7fbac8a4799f6a,
@@ -2064,21 +2059,6 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultSessionName
       value: ABCDEF
-      objectReference: {fileID: 0}
-    - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
-        type: 3}
-      propertyPath: debugLoggingFlags.messages
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
-        type: 3}
-      propertyPath: showWebview
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
-        type: 3}
-      propertyPath: waitForUserLaunch
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e816dfed6d2248eba7d62bdd192bdb9, type: 3}
