@@ -16,13 +16,6 @@ public class LevelController : MonoBehaviour
 
         int demolitionLevelToLoad = (SceneManager.GetActiveScene().buildIndex + 1)%(SceneManager.sceneCountInBuildSettings);
 
-        // $$$ TEST SETUP: RETURN TO MAIN MENU AFTER LAST SCENE
-        if (demolitionLevelToLoad == 0)
-        {
-            ReturnToMainMenu();
-            return;
-        }
-
         // skip the main menu
         if (demolitionLevelToLoad == 0)
             demolitionLevelToLoad = 1;
