@@ -11,16 +11,23 @@ public class LevelController : MonoBehaviour
 
     public static void LoadNextCroquetLevel()
     {
-        Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
-        Debug.Log($"current sceneBuildIndex is {SceneManager.GetActiveScene().buildIndex}");
+        // Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
+        // Debug.Log($"current sceneBuildIndex is {SceneManager.GetActiveScene().buildIndex}");
 
         int demolitionLevelToLoad = (SceneManager.GetActiveScene().buildIndex + 1)%(SceneManager.sceneCountInBuildSettings);
+
+        // $$$ TEST SETUP: RETURN TO MAIN MENU AFTER LAST SCENE
+        if (demolitionLevelToLoad == 0)
+        {
+            ReturnToMainMenu();
+            return;
+        }
 
         // skip the main menu
         if (demolitionLevelToLoad == 0)
             demolitionLevelToLoad = 1;
 
-        Debug.Log($"Next Level Button Attempting to load scene with sceneBuildIndex {demolitionLevelToLoad}");
+        Debug.Log($"Next Level button requesting scene with buildIndex {demolitionLevelToLoad}");
         Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
     }
 
@@ -69,6 +76,13 @@ public class LevelController : MonoBehaviour
         }
 
         return sessionName.ToString();
+    }
+
+    public static void ReturnToMainMenu()
+    {
+        // tell Croquet to tell us to shut down then load scene 0
+        // NB: currently a static method
+        CroquetBridge.Instance.SendToCroquet("shutdown", "0");
     }
 
     public void QuitGame()
