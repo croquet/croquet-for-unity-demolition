@@ -24,6 +24,12 @@ public class LevelController : MonoBehaviour
         Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
     }
 
+    public static void ResetCroquetLevel()
+    {
+        int demolitionLevelToLoad = SceneManager.GetActiveScene().buildIndex;
+        Croquet.RequestToLoadScene(demolitionLevelToLoad, true);
+    }
+
     public static void StartDefaultSession()
     {
         CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
