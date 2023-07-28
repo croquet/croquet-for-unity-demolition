@@ -241,7 +241,9 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld, AM_Initializ
     }
 
     onInitializationStart() {
-        // maybe nothing special to do
+        if (this.service('InitializationManager').activeScene === 'demolition4') {
+            this.buildAll();
+        }
     }
 
     onObjectInitialization(cls, spec) {
