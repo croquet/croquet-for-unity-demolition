@@ -35,12 +35,8 @@ public class MoveAndShoot : MonoBehaviour
         if (Input.touchSupported)
         {
             int countNow = Input.touchCount;
-            secondaryClick = countNow <= 1 && lastTouchCount > 1;
             lastTouchCount = countNow;
         }
-        else secondaryClick = Input.GetMouseButtonUp(1);
-
-        if (secondaryClick) Croquet.Publish("ui", "new");
     }
 
     void ProcessPointer()
