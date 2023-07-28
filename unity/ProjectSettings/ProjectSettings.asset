@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.croquet.demolition
+    Android: io.croquet.demolition
     Standalone: io.croquet.demolition
     Tizen: net.gree.webview.sample
     iPhone: net.gree.webview.AELTest2
