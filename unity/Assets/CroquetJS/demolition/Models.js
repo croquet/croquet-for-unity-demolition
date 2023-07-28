@@ -2,6 +2,7 @@
 
 import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-extraneous-dependencies
 import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier"; // eslint-disable-line import/no-extraneous-dependencies
+import { InitializationManager, AM_InitializationClient } from "../build-tools/sources/unity-bridge";
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
@@ -52,6 +53,14 @@ class BlockActor extends DynamicDemolitionActor {
 
     init(options) {
         options.ccdEnabled = false;
+        // minor hack: if initialised from Unity, the options will contain a type value
+        // which is the name of a prefab.  in that case, make sure we have the
+        // corresponding shape value for when we initialise the collider.  in line
+        // with the getter above, lack of shape value implies a cube.
+        if (options.type) {
+            const shape = { WoodColumn: "121", WoodPlatform: "414" }[options.type];
+            if (shape) options.shape = shape;
+        }
         super.init(options);
         this.buildCollider();
         this._color = [1, 1, 1]; // full brightness
@@ -180,6 +189,8 @@ BarrelActor.register('BarrelActor');
 // static objects representing the scene boundaries
 class EnvironmentActor extends GameActor {
     // get pawn() { return 'EnvironmentPawn'; } no - use default GamePawn
+    get gamePawnType() { return '' } // no Unity pawn
+
     init(options) {
         options.rigidBodyType = 'static';
         super.init(options);
@@ -200,9 +211,9 @@ EnvironmentActor.register('EnvironmentActor');
 //-- BaseActor ------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------
 
-class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
+class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld, AM_InitializationClient) {
     get pawn() { return 'BasePawn' }
-    get gamePawnType() { return "" } // no Unity pawn
+    get gamePawnType() { return '' } // no Unity pawn
 
     init(options) {
         super.init(options);
@@ -221,8 +232,24 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
         this.subscribe("ui", "shoot", this.shoot);
         this.subscribe("ui", "new", this.reset);
 
-        this.buildAll();
-        this.versionBump = 3;
+        // this.buildAll();
+        this.versionBump = 0;
+    }
+
+    onPrepareForInitialization() {
+        this.destroyAllDynamics(); // $$$ perhaps no longer just dynamics?
+    }
+
+    onInitializationStart() {
+        if (this.service('InitializationManager').activeScene === 'demolition4') {
+            this.buildAll();
+        }
+    }
+
+    onObjectInitialization(cls, spec) {
+        // all objects created in this world are children of this object
+        spec.parent = this;
+        cls.create(spec);
     }
 
     shoot(data) {
@@ -241,9 +268,13 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld) {
     }
 
     reset() {
-        this.dynamics.forEach(b => b.destroy());
-        // this.say('hasReset'); was thinking of flushing all pawn destructions to Unity - but the pawns haven't even been told yet
-        this.buildAll();
+        // $$$ figure out if there's even a meaning to reset.  probably switch to requesting a scene init (even if for the same scene).
+        // this.destroyAllDynamics();
+        // this.buildAll();
+    }
+
+    destroyAllDynamics() {
+        Array.from(this.dynamics).forEach(b => b.destroy()); // don't iterate on the set itself while removing
     }
 
     buildAll() {
@@ -449,7 +480,7 @@ MyUserManager.register("MyUserManager");
 export class MyModelRoot extends ModelRoot {
 
     static modelServices() {
-        return [RapierManager, MyUserManager];
+        return [RapierManager, MyUserManager, InitializationManager];
     }
 
     init(...args) {
