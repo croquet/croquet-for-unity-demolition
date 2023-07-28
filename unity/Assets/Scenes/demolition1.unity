@@ -37011,11 +37011,6 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 6408879918408363025, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
-        type: 3}
-      propertyPath: m_PlaneDistance
-      value: 101.36
-      objectReference: {fileID: 0}
     - target: {fileID: 6408879919373019296, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
         type: 3}
       propertyPath: m_Name

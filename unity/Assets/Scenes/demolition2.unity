@@ -12620,16 +12620,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1089567240, guid: d6fb37a12cd8f9a46b8565ea79cdc86b, type: 3}
+      propertyPath: m_fontSize
+      value: 84.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203689617, guid: d6fb37a12cd8f9a46b8565ea79cdc86b, type: 3}
+      propertyPath: m_fontSize
+      value: 80.05
+      objectReference: {fileID: 0}
     - target: {fileID: 6408879918408363025, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1148729239}
-    - target: {fileID: 6408879918408363025, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
-        type: 3}
-      propertyPath: m_PlaneDistance
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 6408879919373019296, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
         type: 3}
       propertyPath: m_Name
@@ -12689,6 +12692,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408879920187805244, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 76.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218332169107136866, guid: d6fb37a12cd8f9a46b8565ea79cdc86b,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 76.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6fb37a12cd8f9a46b8565ea79cdc86b, type: 3}
