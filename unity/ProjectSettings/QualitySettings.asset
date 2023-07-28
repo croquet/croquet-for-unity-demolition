@@ -232,5 +232,6 @@ QualitySettings:
     Web: 3
     WebGL: 0
     Wii: 3
+    Windows Store Apps: 0
     XBOX360: 3
     iPhone: 3
