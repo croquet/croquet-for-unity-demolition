@@ -135,53 +135,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &991348171545694577
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 991348171545694576}
-  - component: {fileID: 8766339686055941160}
-  m_Layer: 0
-  m_Name: WoodCube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &991348171545694576
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991348171545694577}
-  m_LocalRotation: {x: -0.48625478, y: -0.43725032, z: 0.55812335, w: 0.5107512}
-  m_LocalPosition: {x: 0, y: 0, z: -159.55}
-  m_LocalScale: {x: 200, y: 200, z: 200}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 7245554301768001504}
-  m_Father: {fileID: 3536856508997117241}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.495, y: -81.678, z: 95.503}
---- !u!114 &8766339686055941160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991348171545694577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64c47413066d9694a99796d72c8809b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationAxis: {x: 0, y: 1, z: 0}
-  rotSpeed: 0.05
 --- !u!1 &3536856508997117237
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +167,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 991348171545694576}
+  - {fileID: 7245554301768001504}
   - {fileID: 3536856509071480498}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -803,6 +756,7 @@ GameObject:
   - component: {fileID: 7245554301768001504}
   - component: {fileID: 5990555697750763589}
   - component: {fileID: 8414498591572270223}
+  - component: {fileID: 4452901442609042916}
   m_Layer: 0
   m_Name: LogoCubeModel
   m_TagString: Untagged
@@ -817,12 +771,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8054320229307596122}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: -0.7049897, y: -0.7038355, z: 0.08547008, w: 0.017321527}
+  m_LocalPosition: {x: 0, y: 0, z: -159.55}
+  m_LocalScale: {x: 100, y: 99.99998, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 991348171545694576}
+  m_Father: {fileID: 3536856508997117241}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5990555697750763589
@@ -875,3 +829,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4452901442609042916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8054320229307596122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c47413066d9694a99796d72c8809b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAxis: {x: 0, y: 1, z: 0}
+  rotSpeed: 0.1

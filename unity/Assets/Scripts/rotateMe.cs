@@ -10,6 +10,6 @@ public class rotateMe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(rotationAxis, rotSpeed);
+        transform.Rotate(rotationAxis, rotSpeed);
     }
 }

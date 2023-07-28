@@ -1272,7 +1272,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.9
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5374,6 +5374,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1148729239}
+    - target: {fileID: 3536856508997117238, guid: c0b8b55f57dc0564f80a03955c14ff71,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 31
+      objectReference: {fileID: 0}
     - target: {fileID: 3536856508997117241, guid: c0b8b55f57dc0564f80a03955c14ff71,
         type: 3}
       propertyPath: m_Pivot.x
