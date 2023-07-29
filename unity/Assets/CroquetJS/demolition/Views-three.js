@@ -1,6 +1,6 @@
 // Demolition Demo
 
-import { ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService } from "@croquet/worldcore-kernel";
+import { ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService, GetModelService } from "@croquet/worldcore-kernel";
 import { PM_ThreeVisible, ThreeRenderManager, THREE, ThreeInstanceManager, PM_ThreeInstanced } from "@croquet/worldcore-three";
 import { Widget2, ButtonWidget2, HUD } from "@croquet/worldcore-widget2";
 
@@ -225,7 +225,8 @@ export class MyViewRoot extends ViewRoot {
         reset.label.set({text:"Reset", point:14, border: [4,4,4,4]});
         reset.onClick = () => {
             this.killNextShot = true; // hack
-            this.publish("ui", "new");
+            const { activeScene } = GetModelService("InitializationManager");
+            this.publish(this.sessionId, 'requestToLoadScene', { sceneName: activeScene, forceReload: true });
         };
 
         const cta = new ButtonWidget2({parent: hud, translation: [-10,45], size: [100,30], anchor:[1,0], pivot: [1,0]});
@@ -253,7 +254,7 @@ export class MyViewRoot extends ViewRoot {
         this.future(0).doShoot();
     }
 
-    doShoot() { console.log("doShoot");
+    doShoot() {
         // hack for dealing with whole-screen detection of the clicks
         // meant for buttons
         if (this.killNextShot) {
