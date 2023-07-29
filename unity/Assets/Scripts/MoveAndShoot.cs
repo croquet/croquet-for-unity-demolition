@@ -15,7 +15,7 @@ public class MoveAndShoot : MonoBehaviour
     private bool dragMoved = false;
     Vector2 touchDeltaSinceLastDown = new Vector2();
 
-    private int lastTouchCount = 0;
+    // private int lastTouchCount = 0;
 
     void Awake()
     {
@@ -31,12 +31,12 @@ public class MoveAndShoot : MonoBehaviour
     void LookForSecondaryClick()
     {
         // primary click is handled by the drag detection
-        bool secondaryClick = false;
-        if (Input.touchSupported)
-        {
-            int countNow = Input.touchCount;
-            lastTouchCount = countNow;
-        }
+        // bool secondaryClick = false;
+        // if (Input.touchSupported)
+        // {
+        //     int countNow = Input.touchCount;
+        //     lastTouchCount = countNow;
+        // }
     }
 
     void ProcessPointer()
@@ -83,7 +83,7 @@ public class MoveAndShoot : MonoBehaviour
                 dragMoved = false;
             }
         }
-        
+
     }
 
     void MoveCamera(Vector2 xyDelta)
