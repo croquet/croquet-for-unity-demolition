@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     public TMP_InputField sessionNameInputField;
-
+    public TMP_Text joinCodeIssueText;
+    
     public static void LoadNextCroquetLevel()
     {
         // Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
@@ -60,7 +61,7 @@ public class LevelController : MonoBehaviour
             }
             else
             {
-                Debug.Log("Provided Session Name is not of full length 5!");
+                joinCodeIssueText.text = "Join Code should be 5 characters!";
             }
         }
     }
