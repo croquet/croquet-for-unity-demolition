@@ -71,7 +71,7 @@ public class LevelController : MonoBehaviour
         StringBuilder sessionName = new StringBuilder();
         for (int i = 0; i < 5; i++)
         {
-            int randomNumber = Random.Range(97, 123); // CAPITAL ALPHABETIC
+            int randomNumber = Random.Range(65, 91); // CAPITAL ALPHABETIC
             sessionName.Append((char)randomNumber);
         }
 
