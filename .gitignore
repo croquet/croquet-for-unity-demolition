@@ -65,8 +65,5 @@ $RECYCLE.BIN/
 # GitHub pages
 /_site/
 
-# temporary build files
-*.tmp.js
-
 # Add Dev patch
 pkg-dev.patch
