@@ -88,8 +88,5 @@ TextMesh\ Pro.meta
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
-# Croquet-built JavaScript and support code
+# Croquet-built JavaScript
 /[Aa]ssets/[Ss]treaming[Aa]ssets*
-/[Aa]ssets/CroquetJS/build-tools
-/[Aa]ssets/CroquetJS/build-tools.meta
-dist.meta
