@@ -24,6 +24,21 @@ public class LevelController : MonoBehaviour
         Debug.Log($"Next Level button requesting scene with buildIndex {demolitionLevelToLoad}");
         Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
     }
+    
+    public static void LoadPreviousCroquetLevel()
+    {
+        // Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
+        // Debug.Log($"current sceneBuildIndex is {SceneManager.GetActiveScene().buildIndex}");
+
+        int demolitionLevelToLoad = (SceneManager.GetActiveScene().buildIndex - 1)%(SceneManager.sceneCountInBuildSettings);
+
+        // skip the main menu
+        if (demolitionLevelToLoad == 0)
+            demolitionLevelToLoad = SceneManager.sceneCountInBuildSettings-1;
+
+        Debug.Log($"Previous Level button requesting scene with buildIndex {demolitionLevelToLoad}");
+        Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
+    }
 
     public static void ResetCroquetLevel()
     {
