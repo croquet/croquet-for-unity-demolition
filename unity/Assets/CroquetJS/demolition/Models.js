@@ -2,7 +2,7 @@
 
 import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-extraneous-dependencies
 import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier"; // eslint-disable-line import/no-extraneous-dependencies
-import { InitializationManager, AM_InitializationClient } from "../build-tools/sources/unity-bridge";
+import { InitializationManager, AM_InitializationClient } from "../.js-build/build-tools/sources/unity-bridge";
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
