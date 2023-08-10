@@ -1,0 +1,15 @@
+{
+"name": "@croquet/worldcore-demolition-three",
+"version": "1.0.0",
+"description": "Croquet Demolition demo on THREE",
+"private": true,
+"scripts": {
+    "build-three": "npx webpack --config webpack.config-three.js --mode development"
+},
+"dependencies": {
+    "@croquet/worldcore-three": "^2.0.0-alpha.5",
+    "@croquet/worldcore-widget2": "^2.0.0-alpha.5"
+},
+"author": "Croquet Corporation",
+"license": "Apache-2.0"
+}
