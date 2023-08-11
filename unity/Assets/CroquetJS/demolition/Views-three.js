@@ -1,8 +1,8 @@
 // Demolition Demo
 
-import { App, ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService, GetModelService, StartWorldcore } from "@croquet/worldcore-kernel";
-import { PM_ThreeVisible, ThreeRenderManager, THREE, ThreeInstanceManager, PM_ThreeInstanced } from "@croquet/worldcore-three";
-import { Widget2, ButtonWidget2, HUD } from "@croquet/worldcore-widget2";
+import { App, ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService, GetModelService, StartWorldcore } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-unresolved
+import { PM_ThreeVisible, ThreeRenderManager, THREE, ThreeInstanceManager, PM_ThreeInstanced } from "@croquet/worldcore-three"; // eslint-disable-line import/no-unresolved
+import { Widget2, ButtonWidget2, HUD } from "@croquet/worldcore-widget2"; // eslint-disable-line import/no-unresolved
 
 function setGeometryColor(geometry, color) {
     const count = geometry.getAttribute("position").count;
@@ -360,7 +360,7 @@ export async function StartSession(model, view) {
         packageVersion = JSON.parse(toolsText).packageVersion;
     }
     if (!packageVersion) {
-        throw Error(`Cannot find package version in ${buildStateFile}`);
+        throw Error(`Cannot find package version in ${toolsFile}`);
     }
 
     let sceneText = '';
