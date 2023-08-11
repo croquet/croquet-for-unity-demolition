@@ -1,8 +1,8 @@
 // Demolition Demo
 
-import { Actor, AM_Spatial, mix, ModelRoot, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_add, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-extraneous-dependencies
-import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier"; // eslint-disable-line import/no-extraneous-dependencies
-import { InitializationManager, AM_InitializationClient } from "../.js-build/build-tools/sources/unity-bridge";
+import { Actor, AM_Spatial, mix, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-unresolved
+import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier"; // eslint-disable-line import/no-unresolved
+import { GameModelRoot, AM_InitializationClient } from "../.js-build/build-tools/sources/game-support-models";
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
@@ -230,9 +230,7 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld, AM_Initializ
         });
 
         this.subscribe("ui", "shoot", this.shoot);
-        this.subscribe("ui", "new", this.reset);
 
-        // this.buildAll();
         this.versionBump = 0;
     }
 
@@ -265,12 +263,6 @@ class BaseActor extends mix(Actor).with(AM_Spatial, AM_RapierWorld, AM_Initializ
         const spin = v3_scale(sphericalRandom(), Math.random() * 5);
         bullet.rigidBody.applyImpulse(new RAPIER.Vector3(...force), true);
         bullet.rigidBody.applyTorqueImpulse(new RAPIER.Vector3(...spin), true);
-    }
-
-    reset() {
-        // $$$ figure out if there's even a meaning to reset.  probably switch to requesting a scene init (even if for the same scene).
-        // this.destroyAllDynamics();
-        // this.buildAll();
     }
 
     destroyAllDynamics() {
@@ -477,10 +469,10 @@ MyUserManager.register("MyUserManager");
 //-- MyModelRoot ---------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------
 
-export class MyModelRoot extends ModelRoot {
+export class MyModelRoot extends GameModelRoot {
 
     static modelServices() {
-        return [RapierManager, MyUserManager, InitializationManager];
+        return [RapierManager, MyUserManager, ...super.modelServices()];
     }
 
     init(...args) {

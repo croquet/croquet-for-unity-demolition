@@ -1,8 +1,8 @@
 // Demolition Demo
 
-import { ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService } from "@croquet/worldcore-kernel";
-import { PM_ThreeVisible, ThreeRenderManager, THREE, ThreeInstanceManager, PM_ThreeInstanced } from "@croquet/worldcore-three";
-import { Widget2, ButtonWidget2, HUD } from "@croquet/worldcore-widget2";
+import { App, ViewRoot, Pawn, mix, InputManager, PM_Spatial, PM_Smoothed, toRad, m4_rotation, m4_multiply, TAU, m4_translation, v3_transform, ViewService, GetModelService, StartWorldcore } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-unresolved
+import { PM_ThreeVisible, ThreeRenderManager, THREE, ThreeInstanceManager, PM_ThreeInstanced } from "@croquet/worldcore-three"; // eslint-disable-line import/no-unresolved
+import { Widget2, ButtonWidget2, HUD } from "@croquet/worldcore-widget2"; // eslint-disable-line import/no-unresolved
 
 function setGeometryColor(geometry, color) {
     const count = geometry.getAttribute("position").count;
@@ -225,15 +225,34 @@ export class MyViewRoot extends ViewRoot {
         reset.label.set({text:"Reset", point:14, border: [4,4,4,4]});
         reset.onClick = () => {
             this.killNextShot = true; // hack
-            this.publish("ui", "new");
+            const { activeScene } = GetModelService("InitializationManager");
+            this.publish(this.sessionId, 'requestToLoadScene', { sceneName: activeScene, forceReload: true });
         };
 
-        const cta = new ButtonWidget2({parent: hud, translation: [-10,45], size: [100,30], anchor:[1,0], pivot: [1,0]});
-        cta.label.set({text:"Sign up", point:14, border: [4,4,4,4]});
-        cta.onClick = () => {
+        const next = new ButtonWidget2({ parent: hud, translation: [-10, 45], size: [100, 30], anchor: [1, 0], pivot: [1, 0] });
+        next.label.set({ text: "Next level", point: 14, border: [4, 4, 4, 4] });
+        next.onClick = () => {
             this.killNextShot = true; // hack
-            this.signUp();
+
+            // @@ bigger hack.  we assume that this app's scene names are foo<n>, where n starts at 1.
+            const { activeScene, sceneDefinitions } = GetModelService("InitializationManager");
+            if (sceneDefinitions) {
+                const sceneNames = Object.keys(sceneDefinitions);
+                const prefixLength = [...activeScene].findIndex(c => c >= '0' && c <= '9');
+                const prefix = activeScene.slice(0, prefixLength);
+                const sceneNumber = Number(activeScene.slice(prefixLength));
+                let nextNumber = sceneNumber + 1;
+                if (!sceneDefinitions[prefix + nextNumber]) nextNumber = 1; // loop
+                this.publish(this.sessionId, 'requestToLoadScene', { sceneName: prefix + nextNumber, forceReload: false });
+            }
         };
+
+        // const cta = new ButtonWidget2({parent: hud, translation: [-10,45], size: [100,30], anchor:[1,0], pivot: [1,0]});
+        // cta.label.set({text:"Sign up", point:14, border: [4,4,4,4]});
+        // cta.onClick = () => {
+        //     this.killNextShot = true; // hack
+        //     this.signUp();
+        // };
     }
 
     signUp() {
@@ -253,7 +272,7 @@ export class MyViewRoot extends ViewRoot {
         this.future(0).doShoot();
     }
 
-    doShoot() { console.log("doShoot");
+    doShoot() {
         // hack for dealing with whole-screen detection of the clicks
         // meant for buttons
         if (this.killNextShot) {
@@ -332,3 +351,47 @@ export class MyViewRoot extends ViewRoot {
 
 Pawn.register('GamePawn');
 
+export async function StartSession(model, view) {
+    let packageVersion = '';
+    const toolsFile = 'last-installed-tools.txt'; // will have been copied to the dist folder
+    const toolsFetch = await fetch(toolsFile);
+    if (toolsFetch.status === 200) {
+        const toolsText = await toolsFetch.text();
+        packageVersion = JSON.parse(toolsText).packageVersion;
+    }
+    if (!packageVersion) {
+        throw Error(`Cannot find package version in ${toolsFile}`);
+    }
+
+    let sceneText = '';
+    const sceneFile = 'scene-definitions.txt';
+    const sceneFetch = await fetch(sceneFile);
+    if (sceneFetch.status === 200) sceneText = await sceneFetch.text();
+    // @@ workaround until we're able to request that Croquet.Constants not be
+    // frozen.  this value is examined in the model (by the InitializationManager),
+    // but this is a legitimate case of reading a view-defined value into the
+    // model because we're also hashing this value to determine the sessionId.
+    globalThis.GameConstants = { sceneText };
+
+    // include package version and the scene-definition string as options
+    // just to force sessions with different values to be distinct
+    const options = { c4uPackageVersion: packageVersion, sceneText };
+
+    App.makeWidgetDock();
+    App.sync = false;
+    const loadProgressElem = document.getElementById('loadProgress');
+    StartWorldcore({
+        appId: 'io.croquet.worldcore.demolition',
+        apiKey: '14lzk3cMcqBBy19rxhxMbMBBedPNGLhnF6oLrJaF4',
+        name: App.autoSession(),
+        password: 'password',
+        options,
+        // debug: ['session', 'messages'],
+        model,
+        view,
+        tps: 1000 / 27, // aiming to catch a 50ms Rapier update every other tick
+        progressReporter: ratio => {
+            loadProgressElem.textContent = `${Math.round(ratio * 100)}%`;
+        }
+    }).then(() => loadProgressElem.remove());
+}
