@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44403905, g: 0.49318177, b: 0.5722404, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,6 +817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultSessionName
       value: ABCDEF
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479632283134871797, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
+        type: 3}
+      propertyPath: launchViaMenuIntoScene
+      value: demolition1
       objectReference: {fileID: 0}
     - target: {fileID: 5552111265146463839, guid: 1e816dfed6d2248eba7d62bdd192bdb9,
         type: 3}
