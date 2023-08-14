@@ -128,16 +128,16 @@ When _not_ running with an external browser, by default all JS console output in
 [July 2023] In the near future we plan to provide a configuration setting on the Unity Croquet object, to let the developer select which log categories are transferred.
 
 # Making Sharable Builds
-_During Build our system should now warn about any incompatible state._
-
 Before building the app to deploy for a chosen platform (e.g., Windows or MacOS standalone, or iOS or Android), there are some settings that you need to pay attention to:
 
-* of course, there must be an **Api Key** present in `CroquetSettings.asset`
-* the `Croquet Bridge` **Use Node JS** checkbox _must be cleared_ for anything other than a Windows build
-* all checkboxes under **Debug Logging Flags** should be cleared, so there is no wasteful logging happening behind the scenes
-* the **Wait For User Launch** checkbox must be cleared
+* There must be an **Api Key** present in `CroquetSettings.asset`
+* on `Croquet Bridge` the **Use Node JS** checkbox _must_ be set for a Windows build, cleared otherwise
+* on `Croquet Bridge` the **Debug Force Scene Rebuild** checkbox _must_ be cleared
+* on `Croquet Runner` the **Wait For User Launch** checkbox _must_ be cleared
+* on `Croquet Runner` the **Run Offline** checkbox _must_ be cleared
+* ensuring that all checkboxes are cleared under **Debug Logging Flags** and **JS Log Forwarding** will reduce possibly resource-hungry logging
 
-Hit **Build**!
+Hit **Build**!  If any of the obligatory conditions listed above are not met, the build will be halted.  Fix the conditions and try again.
 
 ## Supplementary information for sharing MacOS builds
 
