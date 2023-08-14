@@ -23,6 +23,8 @@ Install node.js and the node package manager (npm) for your platform here (LTS R
 
 
 ## 2.0 Clone the Repo
+Install git from https://git-scm.com/downloads
+
 ```
 git clone https://github.com/croquet/croquet-for-unity-demolition.git
 ```
@@ -69,7 +71,7 @@ In the Project Navigator, go to `Assets/Scenes` and double-click `mainDemolition
 
 In the editor's top menu, go to the `Croquet` drop-down and select `Build JS on Play` so that it has a check-mark next to it.
 
-Press the play button.  Because this is the first time you have built the app, it will initiate a full webpack build of the JavaScript code - eventually writing webpack's log to the Unity console, each line prefixed with "JS builder".  You should then see console output for startup of the app - ending with "Croquet session running!", at which point the game should start to run.
+Press the play button.    The first time you do so after installation, C4U will notice that you have not yet installed the JavaScript build tools from the package.  It will copy them across, and also run an `npm install` that fetches all Croquet and other dependencies that are needed.  Depending on network conditions, this could take some tens of seconds - during which, because of Unity's scheduling mechanisms, you won't see anything in the console.  Please wait for it to complete.
 
 ### 5.1 Specifying a Croquet Session Name
 _This is an optional configurability feature, not required for you to start playing with Demolition._
