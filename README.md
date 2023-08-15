@@ -23,6 +23,8 @@ Install node.js and the node package manager (npm) for your platform here (LTS R
 
 
 ## 2.0 Clone the Repo
+Install git from https://git-scm.com/downloads
+
 ```
 git clone https://github.com/croquet/croquet-for-unity-demolition.git
 ```
@@ -33,7 +35,7 @@ Note: this repository's large size is predominantly due to our including a speci
 ## 3.0 Load the Unity Project
 
 Make sure you have the Unity Hub installed from
-
+https://unity.com/download
 
  > **NOTE:** For now, we **strongly recommend** using _exactly_ Unity Editor Version `2021.3.19f1` for C4U projects
 
@@ -43,23 +45,8 @@ In the `Unity Hub` app, select `Open => Add project from disk`, then navigate to
 
 > **Note:** During this first loading, Unity might warn that there appear to be script errors. It's fine to hit `Ignore` and continue.  It appears to be related to the project's dependencies, and is determined to be harmless.
 
-## 4.0 Install the JavaScript build tools and their dependencies
 
-### 4.1 Copy Build Tools
-In the editor's top menu, go to the `Croquet` drop-down and select `Copy JS Build Tools`. This will copy some files into `Assets/CroquetJS`, and others into the root of the repository (i.e., the parent directory of the Unity project itself).
-
-### 4.2 Install JavaScript Dependencies
-Now install the dependencies, in the repository root:
-
-```
-cd croquet-for-unity-demolition
-npm install
-```
-
-> **Note:** any time an upgrade to the Croquet Multiplayer package is done, step 4.1 and 4.2 should be repeated to ensure the latest package's build tools and dependencies are available.
-
-
-## 5.0 Set up your Croquet Developer Credentials
+## 4.0 Set up your Croquet Developer Credentials
 
 In the Project Navigator (typically at bottom left), go to `Assets/Settings` and click `CroquetSettings.asset`.  The main field that you need to set up is the **Api Key**.
 
@@ -79,14 +66,14 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 
-## 6.0 Run the Game
+## 5.0 Run the Game
 In the Project Navigator, go to `Assets/Scenes` and double-click `mainDemolition.unity`.  If a "TMP importer" dialog comes up at this point, hit the top button ("Import TMP Essentials") then close the dialog. This is just part of the standard setup for Text Mesh Pro (which is used for all the UI).
 
 In the editor's top menu, go to the `Croquet` drop-down and select `Build JS on Play` so that it has a check-mark next to it.
 
-Press the play button.  Because this is the first time you have built the app, it will initiate a full webpack build of the JavaScript code - eventually writing webpack's log to the Unity console, each line prefixed with "JS builder".  You should then see console output for startup of the app - ending with "Croquet session running!", at which point the game should start to run.
+Press the play button.    The first time you do so after installation, C4U will notice that you have not yet installed the JavaScript build tools from the package.  It will copy them across, and also run an `npm install` that fetches all Croquet and other dependencies that are needed.  Depending on network conditions, this could take some tens of seconds - during which, because of Unity's scheduling mechanisms, you won't see anything in the console.  Please wait for it to complete.
 
-### 6.1 Specifying a Croquet Session Name
+### 5.1 Specifying a Croquet Session Name
 _This is an optional configurability feature, not required for you to start playing with Demolition._
 
 Croquet sessions are inherently multi-user, and this applies fully to the sessions that drive a C4U application. If you start the same application on multiple devices, you can expect that all those devices will be in the application together - for example, all cooperating in the Demolition app.
@@ -97,13 +84,11 @@ That said, the definition of what counts as "the same application" hinges on the
 2. **API Key**. Also mentioned in Section 5.0, this is a developer-specific key for using the Croquet infrastructure. In C4U this is specified in `CroquetSettings`. Note: strictly, the API keys do not have to be identical; as long as they were issued _for the same developer_ they will count as being in agreement.
 3. **Session Name**. All Croquet sessions are launched with a Session Name, which in general can be any alphanumeric token - such as `helloworld`, or `123`. Given that the Application ID and API Key for a given app are unlikely to change frequently, Session Name is the most flexible way to control whether application instances will join the same session or not.
 
-Our initial C4U applications - including Demolition - come with two alternative ways to specify the Session Name:
+Our Croquet for Unity applications - including Demolition - come with two alternative ways to specify the Session Name:
 
-* **The Session Chooser scene**. Loading the scene `SessionChooser.unity` into the editor and pressing play will bring up a simple UI that allows you to select an integer (0 to 100) to act as the session's "name". Hitting the Start button in that UI then loads the `mainDemolition` scene, supplying the selected name. _Note: for this scene hand-off to work, the `mainDemolition` scene must have the index `1`. This can be confirmed in the `Build Settings` dialog._
+* **Join Codes**. In the demolition demo, we have included a simple alphanumeric Join Code menu that works exactly like popular party games like Jackbox.
 
-    The Session Chooser can optionally be included in a build (see "Making Sharable Builds" below).
-
-* **"Default Session Name" property**. If the `mainDemolition` scene is _not_ started by way of the Session Chooser, C4U will use whatever value is found in the **Default Session Name** property of the scene's `Croquet Bridge`.
+* **"Default Session Name" property**. Croquet will use whatever value is found in the **Default Session Name** property of the scene's `Croquet Bridge`.
 
 
 # App UI Details
@@ -143,19 +128,16 @@ When _not_ running with an external browser, by default all JS console output in
 [July 2023] In the near future we plan to provide a configuration setting on the Unity Croquet object, to let the developer select which log categories are transferred.
 
 # Making Sharable Builds
-
 Before building the app to deploy for a chosen platform (e.g., Windows or MacOS standalone, or iOS or Android), there are some settings that you need to pay attention to:
 
-* of course, there must be an **Api Key** present in `CroquetSettings.asset`
-* the Build Settings dialog's **Scenes In Build** list can either include just the `mainDemolition` scene, or in addition the Session Chooser (which, if present, must be numbered scene 0). In the latter case, on startup the user will be forced to choose which session name to use.
-* if the Session Chooser scene is not being included, ensure that the **Default Session Name** in the `Croquet Bridge` contains the alphanumeric token that you would like to use. For example, you might decide to build one version with the ID "playtest", that you distribute among your team during testing, and another with ID "presentation" that you use in presentations and distribute to the audience. Having the separate IDs means that people starting up one version cannot accidentally intrude on another.
-* the `Croquet Bridge` **Use Node JS** checkbox _must be cleared_ for anything other than a Windows build
-* all checkboxes under **Debug Logging Flags** should be cleared, so there is no wasteful logging happening behind the scenes
-* the **Wait For User Launch** checkbox must be cleared
+* There must be an **Api Key** present in `CroquetSettings.asset`
+* on `Croquet Bridge` the **Use Node JS** checkbox _must_ be set for a Windows build, cleared otherwise
+* on `Croquet Bridge` the **Debug Force Scene Rebuild** checkbox _must_ be cleared
+* on `Croquet Runner` the **Wait For User Launch** checkbox _must_ be cleared
+* on `Croquet Runner` the **Run Offline** checkbox _must_ be cleared
+* ensuring that all checkboxes are cleared under **Debug Logging Flags** and **JS Log Forwarding** will reduce possibly resource-hungry logging
 
-To ensure that the build will include your latest JavaScript code, you may wish to invoke `Build JS Now` on the `Croquet` drop-down (and confirm that the console messages show that the build succeeded).
-
-Hit **Build**!
+Hit **Build**!  If any of the obligatory conditions listed above are not met, the build will be halted.  Fix the conditions and try again.
 
 ## Supplementary information for sharing MacOS builds
 
