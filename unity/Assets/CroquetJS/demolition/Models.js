@@ -2,7 +2,7 @@
 
 import { Actor, AM_Spatial, mix, sphericalRandom, v3_scale, v3_normalize, v3_sub, v3_magnitude, User, UserManager } from "@croquet/worldcore-kernel"; // eslint-disable-line import/no-unresolved
 import { RapierManager, AM_RapierWorld, AM_RapierRigidBody, RAPIER } from "@croquet/worldcore-rapier"; // eslint-disable-line import/no-unresolved
-import { GameModelRoot, AM_InitializationClient } from "../.js-build/build-tools/sources/game-support-models";
+import { GameModelRoot, AM_InitializationClient } from "@croquet/game-models"; // eslint-disable-line import/no-unresolved
 
 function rgb(r, g, b) {
     return [r / 255, g / 255, b / 255];
