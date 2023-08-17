@@ -9,7 +9,7 @@ public class LevelController : MonoBehaviour
 {
     public TMP_InputField sessionNameInputField;
     public TMP_Text joinCodeIssueText;
-    
+
     public static void LoadNextCroquetLevel()
     {
         // Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
@@ -24,7 +24,7 @@ public class LevelController : MonoBehaviour
         Debug.Log($"Next Level button requesting scene with buildIndex {demolitionLevelToLoad}");
         Croquet.RequestToLoadScene(demolitionLevelToLoad, forceReload: false);
     }
-    
+
     public static void LoadPreviousCroquetLevel()
     {
         // Debug.Log($"number of scenes active in build settings: {SceneManager.sceneCountInBuildSettings}");
@@ -48,36 +48,24 @@ public class LevelController : MonoBehaviour
 
     public static void StartDefaultSession()
     {
-        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
-        if (bridge != null)
-        {
-            bridge.SetSessionName(""); // this will start the session using the default name
-        }
+        Croquet.SetSessionName(""); // this will start the session using the default name
     }
 
     public void StartRandomSession()
     {
-        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
-        if (bridge != null)
-        {
-            bridge.SetSessionName(GenerateValidSessionName()); // this will start the session using the default name
-        }
+        Croquet.SetSessionName(GenerateValidSessionName()); // start the session using a random name
     }
 
     public void StartSessionWithName()
     {
-        CroquetBridge bridge = FindObjectOfType<CroquetBridge>();
-        if (bridge != null)
+        string sessionName = sessionNameInputField.text;
+        if (sessionName.Length == 5)
         {
-            string sessionName = sessionNameInputField.text;
-            if (sessionName.Length == 5)
-            {
-                bridge.SetSessionName(sessionName); // this will start the session using the default name
-            }
-            else
-            {
-                joinCodeIssueText.text = "Join Code should be 5 characters!";
-            }
+            Croquet.SetSessionName(sessionName); // start the session using the chosen name
+        }
+        else
+        {
+            joinCodeIssueText.text = "Join Code should be 5 characters!";
         }
     }
 
