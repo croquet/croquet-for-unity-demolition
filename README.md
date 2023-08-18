@@ -8,7 +8,7 @@ This repository contains a Croquet for Unity (C4U) view of Brian Upton's "Demoli
 The most important directories are the following:
 * `unity/` - the Unity project directory, from which you can run the game in the Unity editor or create builds for any platform Unity supports except WebGL.
 * `unity/Assets/Scenes/` - the `mainDemolition` scene, along with the `SessionChooser` scene (explained below) that allows a group of players to agree on a session number to join together.
-* `unity/Assets/CroquetJS/` - JavaScript source for building the Croquet side of the game. You can edit the code under this directory to change the game's behaviour.
+* `unity/Assets/CroquetJS/demolition/` - JavaScript source for building the Croquet side of the game. You can edit the code under this directory to change the game's behavior.
 
 # Questions
 Please feel free to ask questions on our [discord](https://croquet.io/discord).
@@ -54,16 +54,11 @@ The API Key is a token of around 40 characters that you can create for yourself 
 
 The App Prefix is the way of identifying with your organization the Croquet apps that you develop and run.  The combination of this prefix and the App Name provided on the `Croquet Bridge` component in each scene is a full App ID - for example, `io.croquet.worldcore.demolition`.  For running the game it is fine to leave this prefix as is, but when you develop your own apps you must change the prefix so that the App ID is a globally unique identifier.  The ID must follow the Android reverse domain naming convention - i.e., each dot-separated segment must start with a letter, and only letters, digits, and underscores are allowed.
 
-**For MacOS:** Find the Path to your Node executable, by going to a terminal and running
+**For MacOS only:** Find the Path to your Node executable, by going to a terminal and running
 ```
 which node
 ```
 On the `CroquetSettings` asset, fill in the **Path to Node** field with the path.
-
-**For Windows:** Your system may complain about "Script Execution Policy" which will prevent our setup scripts from running. The following command allows script execution on Windows for the current user (respond **Yes to [A]ll** when prompted):
-```
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
 
 
 ## 5.0 Run the Game
@@ -122,18 +117,16 @@ Now whenever you press play, the console output will include a line of the form 
 
 When you stop play in the Unity editor, the browser tab will automatically leave the Croquet session.  If you restart play, you will need to reload the tab to join the session again.
 
-## Viewing JS Errors in Unity
-When _not_ running with an external browser, by default all JS console output in the "warn" and "error" categories will be transferred across the bridge and appear in the Unity console.
-
-[July 2023] In the near future we plan to provide a configuration setting on the Unity Croquet object, to let the developer select which log categories are transferred.
+## Viewing JS Log Output in Unity
+The `Croquet Bridge` component's **JS Log Forwarding** property has checkboxes that let you select which categories of console output in the JavaScript session will be transferred across the bridge and appear in the Unity console.  By default, the "warn" and "error" categories are sent.
 
 # Making Sharable Builds
 Before building the app to deploy for a chosen platform (e.g., Windows or MacOS standalone, or iOS or Android), there are some settings that you need to pay attention to:
 
-* There must be an **Api Key** present in `CroquetSettings.asset`
-* on `Croquet Bridge` the **Use Node JS** checkbox _must_ be set for a Windows build, cleared otherwise
+* there must be an **Api Key** present in `CroquetSettings.asset`
 * on `Croquet Bridge` the **Debug Force Scene Rebuild** checkbox _must_ be cleared
 * on `Croquet Runner` the **Wait For User Launch** checkbox _must_ be cleared
+* on `Croquet Runner` the **Force To Use Node JS** checkbox _must_ be cleared for anything other than a Windows build
 * on `Croquet Runner` the **Run Offline** checkbox _must_ be cleared
 * ensuring that all checkboxes are cleared under **Debug Logging Flags** and **JS Log Forwarding** will reduce possibly resource-hungry logging
 
