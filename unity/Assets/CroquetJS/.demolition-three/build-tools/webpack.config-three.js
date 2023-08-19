@@ -13,6 +13,10 @@ module.exports = _env => ({
     },
     resolve: {
         modules: [path.resolve(__dirname, '../node_modules')],
+        alias: {
+            '@croquet/game-models$': path.resolve(__dirname, '../../.js-build/build-tools/sources/game-support-models.js'),
+            '@croquet/unity-bridge$': path.resolve(__dirname, '../../.js-build/build-tools/sources/unity-bridge.js'),
+        },
         fallback: { "crypto": false }
     },
     experiments: {
