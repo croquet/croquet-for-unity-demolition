@@ -1,14 +1,10 @@
 {
   "dependencies": {
-    "com.croquet.multiplayer": {
-      "version": "https://github.com/croquet/croquet-for-unity-package.git#v0.7.7",
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
       "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.addressables": "1.19.19",
-        "com.unity.inputsystem": "1.5.0"
-      },
-      "hash": "c2ad71236815f44a38d2d4250944c103c9eec3a1"
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.addressables": {
       "version": "1.19.19",
@@ -129,6 +125,16 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "io.croquet.multiplayer": {
+      "version": "https://github.com/croquet/croquet-for-unity-package.git#develop",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.addressables": "1.19.19",
+        "com.unity.inputsystem": "1.5.0"
+      },
+      "hash": "d2ed794f6ef888e91427b8632fa47bf9b87d1487"
     },
     "net.gree.unity-webview": {
       "version": "https://github.com/gree/unity-webview.git?path=/dist/package-nofragment",

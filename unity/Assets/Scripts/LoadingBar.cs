@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LoadingBar : LoadingProgressDisplay
 {
@@ -15,8 +16,20 @@ public class LoadingBar : LoadingProgressDisplay
 
     private TMPro.TMP_Text msgTxt;
 
+    private Canvas myCanvas;
     void Awake()
     {
+        // if a long-lived LoadingProgressDisplay has come across from another scene, delete this one
+        LoadingProgressDisplay[] loadingObjs = FindObjectsOfType<LoadingProgressDisplay>(true);
+        if (loadingObjs.Length > 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        myCanvas = GetComponent<Canvas>();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        
         // be ready in case Start() in some client wants to set a value here
         slider = GetComponentInChildren<Slider>();
         msgTxt = GetComponentInChildren<TextMeshProUGUI>();
@@ -30,6 +43,11 @@ public class LoadingBar : LoadingProgressDisplay
         }
     }
 
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        myCanvas.worldCamera = Camera.main;
+    }
+    
     private void Update()
     {
         if (smoothing)

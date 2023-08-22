@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 
@@ -14,7 +15,7 @@ public class MoveAndShoot : MonoBehaviour
     private bool dragMoved = false;
     Vector2 touchDeltaSinceLastDown = new Vector2();
 
-    private int lastTouchCount = 0;
+    // private int lastTouchCount = 0;
 
     void Awake()
     {
@@ -30,59 +31,59 @@ public class MoveAndShoot : MonoBehaviour
     void LookForSecondaryClick()
     {
         // primary click is handled by the drag detection
-        bool secondaryClick = false;
-        if (Input.touchSupported)
-        {
-            int countNow = Input.touchCount;
-            secondaryClick = countNow <= 1 && lastTouchCount > 1;
-            lastTouchCount = countNow;
-        }
-        else secondaryClick = Input.GetMouseButtonUp(1);
-
-        if (secondaryClick) Croquet.Publish("ui", "new");
+        // bool secondaryClick = false;
+        // if (Input.touchSupported)
+        // {
+        //     int countNow = Input.touchCount;
+        //     lastTouchCount = countNow;
+        // }
     }
 
     void ProcessPointer()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            // Debug.Log("Down");
-            touchDeltaSinceLastDown = Vector2.zero;
-            dragging = true;
-            dragMoved = false; // if still false on up, this was just a tap
-
-            // read yaw and pitch from camera's current position
-            Quaternion q = mainCamera.transform.localRotation;
-            yaw = Mathf.Rad2Deg * Mathf.Atan2(2 * q.y * q.w - 2 * q.x * q.z, 1 - 2 * q.y * q.y - 2 * q.z * q.z);
-            pitch = Mathf.Rad2Deg * Mathf.Atan2(2*q.x*q.w - 2*q.y*q.z, 1 - 2*q.x*q.x - 2*q.z*q.z);
-        }
-
-        if (Input.GetMouseButton(0))
-        {
-            // Debug.Log(Pointer.current.delta.ReadValue());
-            Vector2 xyDelta = Pointer.current.delta.ReadValue();
-            if (xyDelta.x == 0 && xyDelta.y == 0) return;
-
-            MoveCamera(xyDelta);
-
-            touchDeltaSinceLastDown += xyDelta;
-            if (touchDeltaSinceLastDown.magnitude > 2)
+            if (Input.GetMouseButtonDown(0))
             {
-                //Debug.Log(touchDeltaSinceLastDown.magnitude.ToString());
-                dragMoved = true;
+                // Debug.Log("Down");
+                touchDeltaSinceLastDown = Vector2.zero;
+                dragging = true;
+                dragMoved = false; // if still false on up, this was just a tap
+
+                // read yaw and pitch from camera's current position
+                Quaternion q = mainCamera.transform.localRotation;
+                yaw = Mathf.Rad2Deg * Mathf.Atan2(2 * q.y * q.w - 2 * q.x * q.z, 1 - 2 * q.y * q.y - 2 * q.z * q.z);
+                pitch = Mathf.Rad2Deg * Mathf.Atan2(2*q.x*q.w - 2*q.y*q.z, 1 - 2*q.x*q.x - 2*q.z*q.z);
+            }
+
+            if (Input.GetMouseButton(0))
+            {
+                // Debug.Log(Pointer.current.delta.ReadValue());
+                Vector2 xyDelta = Pointer.current.delta.ReadValue();
+                if (xyDelta.x == 0 && xyDelta.y == 0) return;
+
+                MoveCamera(xyDelta);
+
+                touchDeltaSinceLastDown += xyDelta;
+                if (touchDeltaSinceLastDown.magnitude > 2)
+                {
+                    //Debug.Log(touchDeltaSinceLastDown.magnitude.ToString());
+                    dragMoved = true;
+                }
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                if (dragging && !dragMoved)
+                {
+                    Fire();
+                }
+
+                dragging = false;
+                dragMoved = false;
             }
         }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (dragging && !dragMoved)
-            {
-                Fire();
-            }
-
-            dragging = false;
-            dragMoved = false;
-        }
     }
 
     void MoveCamera(Vector2 xyDelta)
