@@ -90,3 +90,4 @@ TextMesh\ Pro.meta
 
 # Croquet-built JavaScript
 /[Aa]ssets/[Ss]treaming[Aa]ssets*
+/[Aa]ssets/[Pp]ackages*
