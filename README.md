@@ -14,7 +14,7 @@ The most important directories are the following:
 Please feel free to ask questions on our [discord](https://croquet.io/discord).
 
 # Setup
-To setup the project take the following steps
+To setup the project follow these steps...
 
 ## 1.0 Node Installation
 Node is a prerequisite for installing JavaScript libraries like Croquet and Worldcore, as well as facilitating webpack builds.
@@ -39,11 +39,9 @@ https://unity.com/download
 
  > **NOTE:** For now, we **strongly recommend** using _exactly_ Unity Editor Version `2021.3.19f1` for C4U projects
 
-2021.3.19f1 can be downloaded by pasting the following in your browser: `unityhub://2021.3.19f1/c9714fde33b6` . This deeplink to the Unity Hub should open an installation dialog for the correct version.
+2021.3.19f1 can be downloaded by pasting the following in your browser: `unityhub://2021.3.19f1/c9714fde33b6`  This deeplink to the Unity Hub should open an installation dialog for the correct version.
 
 In the `Unity Hub` app, select `Open => Add project from disk`, then navigate to the `croquet-for-unity-demolition/unity` folder and hit `Add Project`.
-
-> **Note:** During this first loading, Unity might warn that there appear to be script errors. It's fine to hit `Ignore` and continue.  It appears to be related to the project's dependencies, and is determined to be harmless.
 
 
 ## 4.0 Set up your Croquet Developer Credentials
@@ -64,9 +62,13 @@ On the `CroquetSettings` asset, fill in the **Path to Node** field with the path
 ## 5.0 Run the Game
 In the Project Navigator, go to `Assets/Scenes` and double-click `mainDemolition.unity`.  If a "TMP importer" dialog comes up at this point, hit the top button ("Import TMP Essentials") then close the dialog. This is just part of the standard setup for Text Mesh Pro (which is used for all the UI).
 
-In the editor's top menu, go to the `Croquet` drop-down and select `Build JS on Play` so that it has a check-mark next to it.
+In the editor's top menu, go to the `Croquet` drop-down and ensure that `Build JS on Play` has a check-mark next to it.
 
-Press the play button.    The first time you do so after installation, C4U will notice that you have not yet installed the JavaScript build tools from the package.  It will copy them across, and also run an `npm install` that fetches all Croquet and other dependencies that are needed.  Depending on network conditions, this could take some tens of seconds - during which, because of Unity's scheduling mechanisms, you won't see anything in the console.  Please wait for it to complete.
+Press the play button.  The first time you do so after installation, C4U will notice that you have not yet installed the JavaScript build tools from the package.  It will copy them across, and also run an `npm install` that fetches all Croquet and other dependencies that are needed.  Depending on network conditions, this could take some tens of seconds - during which, because of Unity's scheduling mechanisms, you won't see anything in the console.  Please wait for it to complete.
+
+In addition, because of the `Build JS on Play` setting, C4U will run a full webpack build of the JavaScript code - eventually adding webpack's output to the console, each line prefixed with "JS builder".  The first build of the game will take the longest; on subsequent runs the build process should be faster.
+
+Eventually you should see the console output for startup of the game - ending with "Croquet view for scene mainDemolition running", at which point the game's objects will appear.
 
 ### 5.1 Specifying a Croquet Session Name
 _This is an optional configurability feature, not required for you to start playing with Demolition._
@@ -109,9 +111,9 @@ The Demolition app is an instantly-joinable multiplayer app where you and your f
 # Debugging Techniques
 ## Using a Web Browser to Debug the JavaScript Code
 
-On both MacOS and Windows, you can choose to use an external browser such as Chrome to run the JavaScript code.  For debugging, this is more convenient than letting the C4U bridge start up an invisible WebView.
+On both MacOS and Windows, you can choose to use an external browser such as Chrome to run the JavaScript code.  For debugging, this is more convenient than letting the C4U bridge start up an invisible WebView or Node JS process.
 
-In the `mainDemolition` scene (while play is stopped), select the `Croquet` object in the scene hierarchy, then in that object's `Croquet Runner` component select the **Wait For User Launch** checkbox.
+In the `mainDemolition` scene (while play is stopped), select the `Croquet` object in the scene hierarchy, then in that object's `Croquet Runner` component select the **Debug Using External Session** checkbox.
 
 Now whenever you press play, the console output will include a line of the form "ready for browser to load from http://localhost:...".  Copy that address (if you click on the line, it will appear as selectable text in the view below the console) then use it to launch a new browser tab.  This should complete the startup of the app. All the JS developer tools (console, breakpoints etc) offered by the browser are available for working with the code.
 
@@ -125,7 +127,7 @@ Before building the app to deploy for a chosen platform (e.g., Windows or MacOS 
 
 * there must be an **Api Key** present in `CroquetSettings.asset`
 * on `Croquet Bridge` the **Debug Force Scene Rebuild** checkbox _must_ be cleared
-* on `Croquet Runner` the **Wait For User Launch** checkbox _must_ be cleared
+* on `Croquet Runner` the **Debug Using External Session** checkbox _must_ be cleared
 * on `Croquet Runner` the **Force To Use Node JS** checkbox _must_ be cleared for anything other than a Windows build
 * on `Croquet Runner` the **Run Offline** checkbox _must_ be cleared
 * ensuring that all checkboxes are cleared under **Debug Logging Flags** and **JS Log Forwarding** will reduce possibly resource-hungry logging
