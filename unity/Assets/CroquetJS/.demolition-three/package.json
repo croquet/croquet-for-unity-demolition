@@ -19,9 +19,9 @@
         "webpack-dev-server": "^4.11.1"
     },
     "dependencies": {
-        "@croquet/worldcore-kernel": "^2.0.0-alpha.11",
-        "@croquet/worldcore-rapier": "^2.0.0-alpha.11",
-        "@croquet/worldcore-three": "^2.0.0-alpha.11",
-        "@croquet/worldcore-widget2": "^2.0.0-alpha.11"
+        "@croquet/worldcore-kernel": "^2.0.0-alpha",
+        "@croquet/worldcore-rapier": "^2.0.0-alpha",
+        "@croquet/worldcore-three": "^2.0.0-alpha",
+        "@croquet/worldcore-widget2": "^2.0.0-alpha"
     }
 }
