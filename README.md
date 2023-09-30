@@ -66,7 +66,7 @@ In the editor's top menu, go to the `Croquet` drop-down and ensure that the `Bui
 
 **IMPORTANT: During the next step the editor may appear to have frozen, possibly for some minutes. This is not a sign of failure; please be patient.**
 
-Press the Play button.  The first time you do so after installation, C4U will notice that you have not yet installed the JavaScript build tools from the package.  It will copy them across, and also run an `npm install` that fetches all Croquet and other dependencies that are needed.  *Depending on network conditions, this could take a minute or more - during which, because of Unity's scheduling mechanisms, nothing will appear in the console.*
+Press the Play button.  The first time you do so after installation, C4U will notice that you have not yet installed the JavaScript build tools from the package.  It will copy them across, and also run an `npm install` that fetches all Croquet and other dependencies that are needed.  *As noted above, depending on network conditions this could take a few minutes - during which, because of Unity's scheduling mechanisms, nothing will appear in the console.*
 
 In addition to the tools installation, because `Build JS on Play` is set C4U will run a full webpack build of the JavaScript code - eventually adding webpack's output to the console, each line prefixed with "JS builder".  The first build of the game will take the longest; on subsequent runs the build process will be faster.
 
@@ -89,7 +89,9 @@ Our initial C4U applications come with two alternative ways to specify the Sessi
 
 * **Through a menu scene**. Loading the `MainMenu` scene into the editor and pressing Play will bring up a simple alphanumeric Join Code menu that works like popular party games such as Jackbox.  Hitting the "New Game" button generates a random five-letter game code that is then used as the Session Name.  If instead you type a code into the name field and hit "Join Game", the code you entered becomes the Session Name.
 
-> > The `MainMenu` scene was configured to work this way by setting the **Launch Via Menu Into Scene** property on the scene's `Croquet Bridge` object.  This means that C4U will wait for a Session Name to be supplied by a menu-driven script, and will then launch the specified next scene (here, `demolition1`) using that name.
+<ul>
+The `MainMenu` scene was configured to work this way by setting the **Launch Via Menu Into Scene** property on the scene's `Croquet Bridge` object.  This means that C4U will wait for a Session Name to be supplied by a menu-driven script, and will then launch the specified next scene (here, `demolition1`) using that name.
+</ul>
 
 * **"Default Session Name" property**. If the **Launch Via Menu Into Scene** property is left blank, pressing Play will cause C4U to take as its Session Name the value found in the `Croquet Bridge`'s **Default Session Name** property (or, if that is also blank, the Session Name will simply be "unnamed").
 
@@ -128,11 +130,10 @@ The `Croquet Bridge` component's **JS Log Forwarding** property has checkboxes t
 Before building the app to deploy for a chosen platform (e.g., Windows or MacOS standalone, or iOS or Android), there are some settings that you need to pay attention to:
 
 * there must be an **Api Key** present in `CroquetSettings.asset`
-* on `Croquet Bridge` the **Debug Force Scene Rebuild** checkbox _must_ be cleared
 * on `Croquet Runner` the **Debug Using External Session** checkbox _must_ be cleared
 * on `Croquet Runner` the **Force To Use Node JS** checkbox _must_ be cleared for anything other than a Windows build
 * on `Croquet Runner` the **Run Offline** checkbox _must_ be cleared
-* ensuring that all checkboxes are cleared under **Debug Logging Flags** and **JS Log Forwarding** will reduce possibly resource-hungry logging
+* on `Croquet Bridge`, ensuring that all checkboxes are cleared under **Croquet Debug Logging** and **JS Log Forwarding** will reduce possibly resource-hungry logging
 
 Hit **Build**!  If any of the obligatory conditions listed above are not met, the build will be halted.  Fix the conditions and try again.
 
