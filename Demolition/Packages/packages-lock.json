@@ -21,7 +21,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "2.0.0",
+      "version": "2.1.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -35,7 +35,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.21",
+      "version": "3.0.25",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -53,7 +53,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.5.0",
+      "version": "1.7.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -69,7 +69,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.31",
+      "version": "1.1.33",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -89,7 +89,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.6.4",
+      "version": "1.6.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -110,7 +110,7 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.8.0",
+      "version": "1.9.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -120,14 +120,13 @@
       "url": "https://packages.unity.com"
     },
     "io.croquet.multiplayer": {
-      "version": "https://github.com/croquet/croquet-for-unity-package.git#v0.9.3",
+      "version": "file:/Users/drake/Documents/Git/croquet-for-unity-package",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.unity.addressables": "1.19.19",
         "com.unity.inputsystem": "1.5.0"
-      },
-      "hash": "bbee80e755e85fbc0ec84fe4d02682df676d650f"
+      }
     },
     "net.gree.unity-webview": {
       "version": "https://github.com/gree/unity-webview.git?path=/dist/package-nofragment",
