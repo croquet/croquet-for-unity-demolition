@@ -826,7 +826,7 @@ PlayerSettings:
   spritePackerPolicy: 
   webGLMemorySize: 256
   webGLExceptionSupport: 1
-  webGLNameFilesAsHashes: 0
+  webGLNameFilesAsHashes: 1
   webGLDataCaching: 0
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
@@ -838,7 +838,7 @@ PlayerSettings:
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     Android: UNITYWEBVIEW_ANDROID_USES_CLEARTEXT_TRAFFIC
