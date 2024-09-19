@@ -16,3 +16,4 @@ MonoBehaviour:
   appPrefix: io.croquet.worldcore
   preferredPort: 5555
   pathToNode: /usr/local/bin/node
+

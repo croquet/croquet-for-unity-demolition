@@ -67,3 +67,6 @@ $RECYCLE.BIN/
 
 # Add Dev patch
 pkg-dev.patch
+
+# WebGL templates
+Demolition/Assets/WebGLTemplates/
